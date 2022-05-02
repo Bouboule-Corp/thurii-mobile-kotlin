@@ -1,5 +1,6 @@
 package com.bouboulecorp.thurii
 
+import com.google.common.primitives.UnsignedBytes.toInt
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,10 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        assertEquals(toInt(4), 2 + 2)
+    }
+    //@Test
+    fun addition_fail() {
+        assertEquals(toInt(2), 2 + 2)
     }
 }
