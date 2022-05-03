@@ -32,7 +32,9 @@ jobs:
           java-version: '17'
           cache: 'gradle'
       - name: Run Build
-        run: ./gradlew clean build 
+        run: ./gradlew clean build
+      - name: Run Test
+        run: ./gradlew test
       - uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_KEY }} 
