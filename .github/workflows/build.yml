@@ -35,8 +35,3 @@ jobs:
         run: chmod +x gradlew
       - name: Run Build
         run: ./gradlew build -x koverVerify
-        
-      - uses: codecov/codecov-action@v2
-        with:
-          token: ${{ secrets.CODECOV_KEY }}
-          files: build/reports/kover/report.xml
