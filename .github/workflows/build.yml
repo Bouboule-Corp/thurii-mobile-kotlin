@@ -24,7 +24,7 @@ jobs:
       with:
         android: true
         github_token: ${{ secrets.GTHUB_TOKEN }}
-        reporter: github-pr-check
+        reporter: github-check
 
   build:
     runs-on: ubuntu-latest
