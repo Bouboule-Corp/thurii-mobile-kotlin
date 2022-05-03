@@ -30,7 +30,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '17'
-          cache: 'gradle'
       - name: Run Build
         run: ./gradlew clean build 
       - uses: codecov/codecov-action@v2
