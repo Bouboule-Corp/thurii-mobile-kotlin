@@ -22,7 +22,7 @@ jobs:
     - uses: ScaCap/action-ktlint@master
       with:
         android: true
-        github_token: ${{ secrets.github_token }}
+        github_token: ${{ secrets.GTHUB_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
