@@ -41,8 +41,8 @@ jobs:
         run: ./gradlew clean build
       - name: Run Test
         run: |
-          ./gradle test
-          ./gradle koverMergedXmlReport
+          ./gradlew test
+          ./gradlew koverMergedXmlReport
       - uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_KEY }} 
