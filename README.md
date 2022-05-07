@@ -21,16 +21,20 @@ To launch your application on your phone there are some settings to do so that t
   - Activate the **developer mode** ([i need help](https://developer.android.com/studio/debug/dev-options.html#enable))
   - Enable **usb debugging** ([i need help](https://developer.android.com/studio/run/device.html#setting-up))
 
-Then select your device and lunch the application on your smartphone.      
-<img alt="create emulateur" src="./docs/docs_img/select_phone.png">
+
+Then select your device and lunch the application on your smartphone.   
+
+<img alt="create emulateur" src="./docs/docs_imgs/select_phone.png">
 
 ### With an emulator
 
 First, create your emulator by clicking on the **divice manager** button.   
-<img alt="create emulateur" src="./docs/docs_img/create_emulateur.png">
+
+<img alt="create emulateur" src="./docs/docs_imgs/create_emulateur.png">
 
 Then select and launch the application on your emulator.   
-<img alt="lunch emulateur" src="./docs/docs_img/lunch_emulateur.png">
+
+<img alt="lunch emulateur" src="./docs/docs_imgs/lunch_emulateur.png">
  
 ### Additional documentation
 
