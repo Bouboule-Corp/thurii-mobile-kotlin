@@ -13,7 +13,7 @@ The view represents the visible part of the iceberg, i.e. the graphical interfac
 
 The ViewModel represents the layer that manages all the business logic of the application, it concerns the processing operations that take place between the database and the view, for example the formatting of data, the sending of parameters to the queries, the reception of data.
 
-<img alt="schema MVVM" src="./docs/docs_imgs/mvvm.jpeg">
+<img alt="schema MVVM" src="./docs_imgs/mvvm.jpeg">
 
 ## Adventage
 
@@ -29,7 +29,7 @@ MVVM facilitates the possibility of adding and reusing code by the principle of 
 
 ## MVVM recommended by Google for Android applications
 
-<img alt="google MVVM" src="./docs/docs_imgs/google_mvvm.png">
+<img alt="google MVVM" src="./docs_imgs/google_mvvm.png">
 
 According to [android developers](https://developer.android.com/topic/architecture)
 
