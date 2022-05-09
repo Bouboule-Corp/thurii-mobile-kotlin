@@ -13,6 +13,6 @@ task clean(type: Delete) {
 
 tasks.withType(Test) {
     testLogging {
-        events "standardOut", "started", "passed", "skipped", "failed"
+        events "standardOut", "passed", "skipped", "failed"
     }
 }
