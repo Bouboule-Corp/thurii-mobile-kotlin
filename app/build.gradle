@@ -44,6 +44,10 @@ dependencies {
 
 tasks.withType(Test) {
     testLogging {
-        events "standardOut", "started", "passed", "skipped", "failed"
+        events "standardOut", "passed", "skipped", "failed"
     }
+}
+
+testlogger {
+    theme 'mocha'
 }
