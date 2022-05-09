@@ -11,6 +11,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-testlogger {
-    theme 'mocha'
+test {
+	testLogging {
+		events "PASSED", "SKIPPED", "FAILED"
+	}
 }
