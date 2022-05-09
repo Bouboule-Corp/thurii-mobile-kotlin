@@ -10,9 +10,3 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-test {
-	testLogging {
-		events "PASSED", "SKIPPED", "FAILED"
-	}
-}
