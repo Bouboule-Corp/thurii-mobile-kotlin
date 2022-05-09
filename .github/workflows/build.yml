@@ -38,7 +38,7 @@ jobs:
           java-version: '17'
           cache: 'gradle'
       - name: Run Build
-        run: ./gradlew clean build -x test testDebugUnitTest testReleaseUnitTest
+        run: ./gradlew clean build -x testDebugUnitTest testReleaseUnitTest
       - name: Run Test
         run: |
           ./gradlew test
