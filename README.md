@@ -1,4 +1,4 @@
-# THURII 
+# THURII  [![codecov](https://codecov.io/gh/Bouboule-Corp/thurii-mobile-kotlin/branch/master/graph/badge.svg?token=UVI9MFAXVK)](https://codecov.io/gh/Bouboule-Corp/thurii-mobile-kotlin)
 
 **Thurii** is an outdoor sports application developped by the **BoubouleCorp**.  
 This repository is for the mobile app based on [Kotlin](https://developer.android.com/kotlin)
@@ -40,7 +40,7 @@ Then select and launch the application on your emulator.
 
 For more resources on learning Android development, visit the [Developer Guides](https://developer.android.com/guide) at [developer.android.com](https://developer.android.com/).
 
-## Lunch Tests
+## Launch Tests
 
 .......................................................
 
