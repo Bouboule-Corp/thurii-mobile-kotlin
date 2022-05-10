@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Thurii</string>
+    <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
+    <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
+    <string name="female">Femme</string>
+    <string name="male">Homme</string>
+    <string name="btn_continue">Continue</string>
+    <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties?</string>
+    <string name="register_sport_des">Classez vos pratiques par ordre de préférence.</string>
+    <string name="rando">Randonée</string>
+    <string name="escalade">Escalade</string>
+    <string name="snow">Ski/Snow</string>
 </resources>
