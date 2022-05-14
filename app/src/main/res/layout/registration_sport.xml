@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="#0B0F0F">
@@ -19,7 +20,7 @@
     <TextView
         android:id="@+id/gender_title"
         android:layout_width="326dp"
-        android:layout_height="96dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:lineSpacingExtra="4dp"
@@ -33,7 +34,7 @@
     <TextView
         android:id="@+id/gender_des"
         android:layout_width="335dp"
-        android:layout_height="88dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginTop="16dp"
         android:text="@string/register_sport_des"
@@ -44,14 +45,88 @@
 
 
     <LinearLayout
+        android:id="@+id/first_choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_des"
+        android:background="@drawable/register_up_down_border"
+        >
+
+        <TextView
+            android:id="@+id/first_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_choice_layout"
+        android:background="@drawable/register_up_down_border">
+
+        <TextView
+            android:id="@+id/second_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="251dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_choice_layout"
+        android:background="@drawable/register_up_down_border">
+
+        <TextView
+            android:id="@+id/third_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="3"
+            android:paddingVertical="15dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/icon_select"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="28dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gender_des">
+        app:layout_constraintTop_toBottomOf="@+id/third_choice_layout">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -61,13 +136,13 @@
 
             <ImageButton
                 android:id="@+id/btn_rando"
-                android:contentDescription="@string/rando"
                 android:layout_width="91dp"
                 android:layout_height="91dp"
-                android:scaleType="fitCenter"
                 android:alpha="0.4"
-                android:src="@drawable/register_ic_rando"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/rando"
+                android:scaleType="fitCenter"
+                android:src="@drawable/register_ic_rando" />
 
             <TextView
                 android:id="@+id/text_rando"
@@ -94,13 +169,13 @@
 
             <ImageButton
                 android:id="@+id/btn_escalade"
-                android:contentDescription="@string/escalade"
                 android:layout_width="91dp"
                 android:layout_height="91dp"
-                android:scaleType="fitCenter"
                 android:alpha="0.4"
-                android:src="@drawable/register_ic_escalade"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/escalade"
+                android:scaleType="fitCenter"
+                android:src="@drawable/register_ic_escalade" />
 
             <TextView
                 android:id="@+id/txt_escalade"
@@ -126,13 +201,13 @@
 
             <ImageButton
                 android:id="@+id/btn_snow"
-                android:contentDescription="@string/snow"
                 android:layout_width="91dp"
                 android:layout_height="91dp"
-                android:scaleType="fitCenter"
                 android:alpha="0.4"
-                android:src="@drawable/register_ic_snow"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/snow"
+                android:scaleType="fitCenter"
+                android:src="@drawable/register_ic_snow" />
 
             <TextView
                 android:id="@+id/txt_snow"
@@ -149,18 +224,13 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/sports_list"
-        android:layout_width="404dp"
-        android:layout_height="122dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon_select" />
-
     <Button
         android:id="@+id/continue_button"
-        android:layout_width="359dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:text="@string/btn_continue"
         android:backgroundTint="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
