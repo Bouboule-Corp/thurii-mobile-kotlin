@@ -3,19 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:background="#0B0F0F">
-
-    <ProgressBar
-        android:id="@+id/step_bar"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="405dp"
-        android:layout_height="7dp"
-        android:layout_marginTop="4dp"
-        android:progress="25"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/gender_title"
@@ -29,7 +18,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/step_bar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/gender_des"
@@ -54,7 +43,6 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gender_des"
-        android:background="@drawable/register_up_down_border"
         >
 
         <TextView
@@ -79,7 +67,7 @@
         tools:layout_editor_absoluteY="332dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/first_choice_layout"
-        android:background="@drawable/register_up_down_border">
+        >
 
         <TextView
             android:id="@+id/second_choice"
@@ -103,7 +91,7 @@
         tools:layout_editor_absoluteY="251dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/second_choice_layout"
-        android:background="@drawable/register_up_down_border">
+        >
 
         <TextView
             android:id="@+id/third_choice"
@@ -224,17 +212,5 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/continue_button"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="@string/btn_continue"
-        android:backgroundTint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout> 
+</androidx.constraintlayout.widget.ConstraintLayout>
