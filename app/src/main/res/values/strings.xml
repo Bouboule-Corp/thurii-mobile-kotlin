@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Thurii</string>
+    <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
+    <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
+    <string name="female">Femme</string>
+    <string name="male">Homme</string>
+    <string name="btn_continue">Continue</string>
+    <string name="register_info_title">Fournissez à votre Coach quelques dernières informations</string>
+    <string name="register_info_des">Ces informations permettent de vous fournir des données et un entrainement pertinent et personnalisé ainsi qu’adapter vos sorties à votre niveau.</string>
+    <string name="birthday">Date de naissance</string>
+    <string name="weight">Poids</string>
+    <string name="size">Taille</string>
 </resources>
