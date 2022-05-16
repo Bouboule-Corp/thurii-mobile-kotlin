@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thurii">
         <activity
-            android:name=".RegisterSportActivity"
+            android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

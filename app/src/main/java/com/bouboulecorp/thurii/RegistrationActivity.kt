@@ -45,9 +45,9 @@ class RegistrationActivity : AppCompatActivity() {
             con_button.setBackgroundColor(ContextCompat.getColor(this, R.color.color_logo));
         }
         con_button.setOnClickListener {
-            //button.setBackgroundColor(Color.parseColor("#FFBB86FC"))
             var i = progress.progress
             progress.setProgress(i + 25)
+            replaceFragment(FragmentRegistrationSport())
         }
     }
 
