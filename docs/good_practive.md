@@ -1,6 +1,6 @@
 # Good Practice
 
-In addition to ....... and ......., here are some tips for a more maintainable and readable code
+In addition to the linter and the dependabot, here are some tips for a more maintainable and readable code
 
 ## Basic
 
