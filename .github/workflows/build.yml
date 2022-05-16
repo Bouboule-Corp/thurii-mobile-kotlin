@@ -60,4 +60,4 @@ jobs:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
           script:
-            "./gradlew connectedCheck"
+            "JAVA_HOME=$JAVA_HOME_17_X64 && ./gradlew connectedCheck"
