@@ -54,6 +54,7 @@ jobs:
         api-level: [28]
         target: [google_apis]
     steps:
+      - uses: actions/checkout@v3
       - uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: ${{ matrix.api-level }}
