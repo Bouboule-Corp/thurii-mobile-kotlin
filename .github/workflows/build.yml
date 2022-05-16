@@ -48,7 +48,7 @@ jobs:
           token: ${{ secrets.CODECOV_KEY }} 
   instrumented_test:
     runs-on: macos-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     strategy:
       matrix:
         api-level: [28]
