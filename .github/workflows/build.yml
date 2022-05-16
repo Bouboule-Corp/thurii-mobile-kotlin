@@ -46,3 +46,19 @@ jobs:
       - uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_KEY }} 
+  instrumented_test:
+    runs-on: macos-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        api-level: [28]
+        target: [google_apis]
+    steps:
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api-level }}
+          target: ${{ matrix.target }}
+          arch: x86_64
+          profile: pixel_2
+          script:
+            "./gradlew connectedDebugAndroidTest"
