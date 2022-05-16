@@ -45,15 +45,20 @@ For more resources on learning Android development, visit the [Developer Guides]
 Thanks to the github action your tests will be automatically launched when you make a pull request to dev or master.
 
 To run your tests locally :
-........................[thibault]
+  gradle test
 
 ## Libraries and Bots Used
 
-....................................................... [thibault]
+  Dependabot used to update dependencies
+  
+  Testing:
+    MockK for instrumented tests
+    espresso for UI tests
+    jUnir for unit tests
 
 ## Licences
 
-Copyright 2022 BouvouleCorp, Inc.     
+Copyright 2022 BoubouleCorp, Inc.     
 More details [here](https://youtu.be/dQw4w9WgXcQ)
 
 ## Support
