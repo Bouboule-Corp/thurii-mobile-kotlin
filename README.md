@@ -52,9 +52,10 @@ To run your tests locally :
   Dependabot used to update dependencies
   
   Testing:
+  
     MockK for instrumented tests
     espresso for UI tests
-    jUnir for unit tests
+    jUnit for unit tests
 
 ## Licences
 
