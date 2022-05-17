@@ -48,6 +48,11 @@ tasks.withType(Test) {
     }
 }
 
+tasks.withType(connectedDebugAndroidTest) {
+    testLogging {
+        events "standardOut", "passed", "skipped", "failed"
+    }
+}
 testlogger {
     theme 'mocha'
 }
