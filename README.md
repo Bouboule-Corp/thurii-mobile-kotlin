@@ -44,8 +44,8 @@ For more resources on learning Android development, visit the [Developer Guides]
 
 Thanks to the github action your tests will be automatically launched when you make a pull request to dev or master.
 
-To run your tests locally :
-  gradle test
+To run your tests locally :        
+  `gradle test`
 
 ## Libraries and Bots Used
 
