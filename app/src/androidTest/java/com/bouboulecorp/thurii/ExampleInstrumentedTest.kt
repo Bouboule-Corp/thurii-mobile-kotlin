@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.bouboulecorp.thurii", appContext.packageName)
     }
+    @Test
+    fun failAppcontext() {
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.bouboulecorp.thuri", appContext.packageName)
+    }
 }
