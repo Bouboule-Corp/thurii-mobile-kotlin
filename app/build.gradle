@@ -48,7 +48,7 @@ tasks.withType(Test) {
     }
 }
 
-tasks.withType(connectedDebugAndroidTest) {
+tasks.withType(connectedAndroidTest) {
     testLogging {
         events "standardOut", "passed", "skipped", "failed"
     }
