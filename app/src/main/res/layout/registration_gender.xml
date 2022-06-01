@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0B0F0F"
-    android:id="@+id/fragment1">
+    android:id="@+id/fragment_registration_gender">
 
     <TextView
         android:id="@+id/gender_title"
         android:layout_width="326dp"
         android:layout_height="96dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
         android:lineSpacingExtra="4dp"
         android:text="@string/register_gender_title"
@@ -25,7 +25,7 @@
         android:id="@+id/gender_des"
         android:layout_width="335dp"
         android:layout_height="88dp"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
         android:text="@string/register_first_des"
         android:textColor="#EBF5F9"
