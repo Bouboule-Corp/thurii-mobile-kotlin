@@ -59,16 +59,28 @@
             android:textStyle="bold"
             android:textSize="24sp"
             android:textColor="@color/white"/>
+
         <TextView
             android:id="@+id/first_choice_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
+            android:layout_toRightOf="@+id/first_choice"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/first_choice_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/first_choice"/>
+            android:layout_marginEnd="19dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/delete_icon" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -99,12 +111,22 @@
             android:id="@+id/second_choice_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
+            android:layout_toRightOf="@+id/second_choice"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/second_choice_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/second_choice"/>
+            android:layout_marginEnd="19dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/delete_icon" />
 
     </RelativeLayout>
 
@@ -132,16 +154,26 @@
             android:textStyle="bold"
             android:textSize="24sp"
             android:textColor="@color/white"/>
+
         <TextView
             android:id="@+id/third_choice_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
+            android:layout_toRightOf="@+id/third_choice"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/third_choice_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/third_choice"/>
+            android:layout_marginEnd="19dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/delete_icon" />
     </RelativeLayout>
 
     <LinearLayout
