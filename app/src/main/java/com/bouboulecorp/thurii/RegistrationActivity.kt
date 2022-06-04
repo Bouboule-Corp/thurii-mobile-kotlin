@@ -2,12 +2,10 @@
 package com.bouboulecorp.thurii
 
 import android.os.Bundle
-import android.view.View
-import android.widget.*
+import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
-import java.util.zip.Inflater
 
 class RegistrationActivity : AppCompatActivity() {
 
@@ -33,9 +31,16 @@ class RegistrationActivity : AppCompatActivity() {
         val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         binding.continueBtn.setOnClickListener {
+            if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
             var i = progress.progress
             progress.incrementProgressBy(25)
-            replaceFragment(FragmentRegistrationSport())
+//            else if (progress.progress == 50) replaceFragment(FragmentRegistrationInfo())
+        }
+        binding.backbtn.setOnClickListener {
+            if (progress.progress == 50) {
+                replaceFragment(FragmentRegistrationGender())
+                progress.setProgress(25)
+            }
         }
     }
 
