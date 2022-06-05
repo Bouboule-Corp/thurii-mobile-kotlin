@@ -2,9 +2,15 @@
 package com.bouboulecorp.thurii
 
 import android.os.Bundle
-import android.widget.ProgressBar
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.databinding.ActivityMainBinding
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
@@ -28,6 +34,7 @@ class RegistrationActivity : AppCompatActivity() {
                 .add(R.id.fragmentContainer, homeFragment, FragmentRegistrationGender::class.java.simpleName)
                 .commit()
         }
+
         val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         binding.continueBtn.setOnClickListener {
