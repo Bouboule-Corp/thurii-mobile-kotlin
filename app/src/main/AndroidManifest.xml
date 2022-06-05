@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thurii">
         <activity
-            android:name=".LogInSignInMenu"
+            android:name=".activities.LogIn.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LogInSignInMenu.LogInSignInMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +23,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
