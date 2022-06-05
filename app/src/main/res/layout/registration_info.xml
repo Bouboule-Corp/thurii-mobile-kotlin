@@ -33,25 +33,93 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gender_title" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <RelativeLayout
+        android:id="@+id/date_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/register_up_down_border"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        android:paddingVertical="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gender_des"
-        android:hint="@string/birthday"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        app:layout_constraintTop_toBottomOf="@+id/gender_des">
 
-        <AutoCompleteTextView
-            android:id="@+id/dropdown_field"
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date de naissance"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_res"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="38dp"
+            android:layout_toRightOf="@+id/date_txt"
+            android:text="choose"
+            android:textAlignment="textEnd"
             android:textColor="@color/white"
-            android:hint="@string/birthday"/>
+            android:textSize="16dp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/date_btn"
+            android:layout_width="17dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:selectableItemBackground"
+            app:srcCompat="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/weight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:paddingVertical="25dp"
+        android:dropDownWidth="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_layout"
+        android:background="@drawable/spinner_bg"/>
+
+    <TextView
+        android:id="@+id/weight_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/weight_layout" />
+
+    <Spinner
+        android:id="@+id/height_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:paddingVertical="25dp"
+        android:dropDownWidth="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_layout"
+        android:background="@drawable/spinner_bg"/>
+
+    <TextView
+        android:id="@+id/height_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/height_layout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
