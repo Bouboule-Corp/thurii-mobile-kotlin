@@ -1,5 +1,4 @@
 package com.bouboulecorp.thurii.activities.LogInSignInMenu
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +9,6 @@ import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.activities.LogIn.LoginActivity
 
 class LogInSignInMenuActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
