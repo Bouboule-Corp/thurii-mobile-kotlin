@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.TextView
-import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.activities.LogIn.LoginActivity
+import com.bouboulecorp.thurii.R
 
 class LogInSignInMenuActivity : AppCompatActivity() {
 
