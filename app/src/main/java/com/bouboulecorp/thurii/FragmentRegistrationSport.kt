@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -26,6 +27,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
     ): View? {
         val lay = super.onCreateView(inflater, container, savedInstanceState)
 
+        val continue_btn = getActivity()?.findViewById<Button>(R.id.continueBtn)
+
         val btn_rando= lay!!.findViewById<ImageButton>(R.id.btn_rando)
         val btn_escalade = lay!!.findViewById<ImageButton>(R.id.btn_escalade)
         val btn_snow = lay!!.findViewById<ImageButton>(R.id.btn_snow)
@@ -37,8 +40,10 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         val txtV_list = listOf<TextView>(lay!!.findViewById<TextView>(R.id.first_choice_txt),
                                         lay!!.findViewById<TextView>(R.id.second_choice_txt),
                                         lay!!.findViewById<TextView>(R.id.third_choice_txt))
+        continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
 
         btn_rando.setOnClickListener {
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
             btn_rando.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Randonnée")) {
@@ -50,6 +55,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             }
         }
         btn_escalade.setOnClickListener {
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
             btn_escalade.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Escalade")) {
@@ -61,6 +67,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             }
         }
         btn_snow.setOnClickListener {
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
             btn_snow.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Snow")) {
@@ -78,7 +85,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             else if (txtV_list[0].text == "Escalade")
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
-            sport_list.removeAt(0)
+            sport_list.remove(txtV_list[0].text)
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
             txtV_list[0].setText("")
         }
 
@@ -88,7 +96,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             else if (txtV_list[1].text == "Escalade")
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
-            sport_list.removeAt(1)
+            sport_list.remove(txtV_list[1].text)
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
             txtV_list[1].setText("")
         }
 
@@ -98,7 +107,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             else if (txtV_list[2].text == "Escalade")
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
-            sport_list.removeAt(2)
+            sport_list.remove(txtV_list[2].text)
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
             txtV_list[2].setText("")
         }
 
