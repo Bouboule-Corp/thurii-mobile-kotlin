@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Thurii</string>
+    <string name="app_name">Thurii</string>\
+
+    <!-- registration gender -->
+    <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
+    <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
+    <string name="female">Femme</string>
+    <string name="male">Homme</string>
+    <string name="btn_continue">Continue</string>
+
+    <!-- registration sport -->
+    <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties?</string>
+    <string name="register_sport_des">Classez vos pratiques par ordre de préférence.</string>
+    <string name="rando">Randonée</string>
+    <string name="escalade">Escalade</string>
+    <string name="snow">Ski/Snow</string>
+
+    <!-- registration Info -->
+    <string name="register_info_title">Fournissez à votre Coach quelques dernières informations</string>
+    <string name="register_info_des">Ces informations permettent de vous fournir des données et un entrainement pertinent et personnalisé ainsi qu’adapter vos sorties à votre niveau.</string>
+    <string name="birthday">Date de naissance</string>
+    <string name="weight">Poids</string>
+    <string name="size">Taille</string>
+
+    <!-- registration Info -->
+    <string name="register_way_title">Vous y êtes presque</string>
+    <string name="register_way_des">Créez un compte pour accéder aux autres profils, à la création d\'itiniraire, à votre programme d\'entaînement et au suivi de vos sessions.</string>
+    <string name="register_google">S\'inscrire avec Google</string>
+    <string name="register_email">Continue avec un email</string>
+    <string name="condition_politic">En continuant, j\'accepte les Conditions d\'utilisation et la Politique de confidentialité de Thurii.</string>
+    <string name="no_share_info">Rien n\'est partagé sans votre autorisation.</string>
 </resources>
