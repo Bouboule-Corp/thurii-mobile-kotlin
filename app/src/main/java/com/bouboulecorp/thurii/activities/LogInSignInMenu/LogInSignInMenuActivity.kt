@@ -1,17 +1,15 @@
 package com.bouboulecorp.thurii.activities.LogInSignInMenu
-
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.TextView
 import com.bouboulecorp.thurii.MainActivity
 import com.bouboulecorp.thurii.R
+import androidx.appcompat.app.AppCompatActivity
 import com.bouboulecorp.thurii.activities.LogIn.LoginActivity
 
 class LogInSignInMenuActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

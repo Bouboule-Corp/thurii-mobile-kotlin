@@ -1,7 +1,6 @@
 package com.bouboulecorp.thurii.activities.LogIn
-
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bouboulecorp.thurii.R
 
 class LoginActivity : AppCompatActivity() {
