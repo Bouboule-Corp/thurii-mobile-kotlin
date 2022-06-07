@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.databinding.ActivityMainBinding
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
-class RegistrationActivity : AppCompatActivity() {
+class RegistrationActivity: AppCompatActivity() {
 
     lateinit var binding: ActivityRegistrationBinding
 
@@ -40,7 +40,6 @@ class RegistrationActivity : AppCompatActivity() {
         binding.continueBtn.setOnClickListener {
             if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
             else if (progress.progress == 50) replaceFragment(FragmentRegistrationInfo())
-            var i = progress.progress
             progress.incrementProgressBy(25)
         }
         binding.backbtn.setOnClickListener {
