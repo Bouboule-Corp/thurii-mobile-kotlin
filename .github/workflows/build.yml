@@ -26,7 +26,7 @@ jobs:
         github_token: ${{ secrets.GTHUB_TOKEN }}
         reporter: github-pr-review
         fail_on_error: true
-        level: warning
+        level: error
 
   build:
     runs-on: ubuntu-latest
