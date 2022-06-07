@@ -6,7 +6,7 @@ name: Build & Unit Tests
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   pull_request:
-    types: [opened, reopened, edited]
+    types: [opened, reopened, edited, synchronize]
     branches: 
       - master
       - dev
