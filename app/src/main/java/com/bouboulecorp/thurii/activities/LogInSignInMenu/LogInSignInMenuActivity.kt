@@ -1,4 +1,4 @@
-// package com.bouboulecorp.thurii.activities.LogInSignInMenu
+package com.bouboulecorp.thurii.activities.LogInSignInMenu
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
