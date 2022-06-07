@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.TextView
+import com.bouboulecorp.thurii.MainActivity
 import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.activities.LogIn.LoginActivity
 
@@ -27,6 +28,11 @@ class LogInSignInMenuActivity : AppCompatActivity() {
 
     fun goToLoginPage(view: View) {
         val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun goToSigninPage(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

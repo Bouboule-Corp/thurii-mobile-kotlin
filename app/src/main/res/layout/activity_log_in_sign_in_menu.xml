@@ -12,22 +12,22 @@
         android:layout_width="171dp"
         android:layout_height="72dp"
         android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/log_in_menu_button"
-        app:layout_constraintStart_toStartOf="@+id/log_in_menu_button"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_menu_button"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_menu_button"
         app:srcCompat="@drawable/thurii_with_slogan_flou" />
 
     <Button
-        android:id="@+id/log_in_menu_button"
+        android:id="@+id/sign_in_menu_button"
         style="@style/ButtonGreenStyle"
-        android:onClick="goToLoginPage"
+        android:onClick="goToSigninPage"
         android:text="@string/log_in_button"
         android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/sign_in_menu_button"
+        app:layout_constraintBottom_toTopOf="@+id/log_in_menu_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/sign_in_menu_button"
+        android:id="@+id/log_in_menu_button"
         style="@style/ButtonStroke"
         android:onClick="goToLoginPage"
         android:text="@string/sign_in_button"
