@@ -50,6 +50,8 @@ dependencies {
 
 //    Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    debugImplementation "androidx.fragment:fragment-testing:1.4.1"
+
 }
 
 tasks.withType(Test) {
