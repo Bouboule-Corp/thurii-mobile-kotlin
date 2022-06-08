@@ -1,4 +1,3 @@
-
 package com.bouboulecorp.thurii
 
 import android.os.Bundle
@@ -16,7 +15,6 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         supportActionBar?.hide() //hide top bar
 
-//        setContentView(R.layout.activity_registration)
         setContentView(binding.root)
 
         val homeFragment = FragmentRegistrationGender()
@@ -32,9 +30,7 @@ class RegistrationActivity : AppCompatActivity() {
 
         binding.continueBtn.setOnClickListener {
             if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
-            var i = progress.progress
             progress.incrementProgressBy(25)
-//            else if (progress.progress == 50) replaceFragment(FragmentRegistrationInfo())
         }
         binding.backbtn.setOnClickListener {
             if (progress.progress == 50) {
