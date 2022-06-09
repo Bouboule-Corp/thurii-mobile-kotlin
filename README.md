@@ -42,15 +42,24 @@ For more resources on learning Android development, visit the [Developer Guides]
 
 ## Launch Tests
 
-.......................................................
+Thanks to the github action your tests will be automatically launched when you make a pull request to dev or master.
 
-## Libraries Used
+To run your tests locally :        
+  `gradle test`
 
-.......................................................
+## Libraries and Bots Used
+
+  Dependabot used to update dependencies
+  
+  Testing:
+  
+    MockK for instrumented tests
+    espresso for UI tests
+    jUnit for unit tests
 
 ## Licences
 
-Copyright 2022 BouvouleCorp, Inc.     
+Copyright 2022 BoubouleCorp, Inc.     
 More details [here](https://youtu.be/dQw4w9WgXcQ)
 
 ## Support

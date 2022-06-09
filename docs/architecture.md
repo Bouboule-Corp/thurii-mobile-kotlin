@@ -35,6 +35,8 @@ According to [android developers](https://developer.android.com/topic/architectu
 
 ## Implementation
 
+### Getting started : comming soon...
+
 ### Example : comming soon...
 
 ## Additional documentation
