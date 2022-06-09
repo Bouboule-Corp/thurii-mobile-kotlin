@@ -1,10 +1,10 @@
-
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.Registration.RegistrationFragment
 
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
@@ -14,22 +14,23 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
-        supportActionBar?.hide() //hide top bar
+        supportActionBar?.hide() // hide top bar
 
-//        setContentView(R.layout.activity_registration)
         setContentView(binding.root)
-
         val homeFragment = FragmentRegistrationGender()
-        val fragment : Fragment? =
-            supportFragmentManager.findFragmentByTag(FragmentRegistrationGender::class.java.simpleName)
+        val fragment: Fragment? = supportFragmentManager.findFragmentByTag(
+            FragmentRegistrationGender::class.java.simpleName
+        )
+        val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         if (fragment !is FragmentRegistrationGender) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainer, homeFragment, FragmentRegistrationGender::class.java.simpleName)
+                .add(
+                    R.id.fragmentContainer, homeFragment,
+                    FragmentRegistrationGender::class.java.simpleName
+                )
                 .commit()
         }
-
-        val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         binding.continueBtn.setOnClickListener {
             if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
@@ -47,7 +48,7 @@ class RegistrationActivity : AppCompatActivity() {
         }
     }
 
-    private fun replaceFragment(fragment : Fragment) {
+    private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
 
