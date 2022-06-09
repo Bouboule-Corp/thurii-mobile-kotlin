@@ -13,20 +13,23 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
-        supportActionBar?.hide() //hide top bar
+        supportActionBar?.hide() // hide top bar
 
         setContentView(binding.root)
-
         val homeFragment = FragmentRegistrationGender()
-        val fragment : Fragment? =
-            supportFragmentManager.findFragmentByTag(FragmentRegistrationGender::class.java.simpleName)
+        val fragment: Fragment? = supportFragmentManager.findFragmentByTag(
+            FragmentRegistrationGender::class.java.simpleName
+        )
+        val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         if (fragment !is FragmentRegistrationGender) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainer, homeFragment, FragmentRegistrationGender::class.java.simpleName)
+                .add(
+                    R.id.fragmentContainer, homeFragment,
+                    FragmentRegistrationGender::class.java.simpleName
+                )
                 .commit()
         }
-        val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         binding.continueBtn.setOnClickListener {
             if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
