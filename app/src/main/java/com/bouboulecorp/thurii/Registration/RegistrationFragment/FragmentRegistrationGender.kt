@@ -1,4 +1,4 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.Registration.RegistrationFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.R
 
 class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
 
