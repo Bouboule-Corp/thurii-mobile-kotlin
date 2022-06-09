@@ -15,7 +15,6 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
         }
     }
 
@@ -30,7 +29,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             R.id.continueBtn
         )
 
-        val btn_rando= lay!!.findViewById<ImageButton>(
+        val btn_rando = lay!!.findViewById<ImageButton>(
             R.id.btn_rando
         )
         val btn_escalade = lay!!.findViewById<ImageButton>(
