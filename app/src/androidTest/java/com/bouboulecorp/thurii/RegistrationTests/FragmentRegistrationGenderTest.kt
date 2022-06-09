@@ -1,4 +1,4 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.RegistrationTests
 
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.core.app.ActivityScenario
@@ -8,6 +8,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import com.bouboulecorp.thurii.MainActivity
+import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.Registration.RegistrationFragment.FragmentRegistrationGender
 import org.junit.Test
 import org.junit.runner.RunWith
