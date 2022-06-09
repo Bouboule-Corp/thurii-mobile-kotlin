@@ -1,6 +1,5 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.Registration.RegistrationFragment
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import org.w3c.dom.Text
+import com.bouboulecorp.thurii.R
 
 class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,10 +39,14 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         val txtV_list = listOf<TextView>(lay!!.findViewById<TextView>(R.id.first_choice_txt),
                                         lay!!.findViewById<TextView>(R.id.second_choice_txt),
                                         lay!!.findViewById<TextView>(R.id.third_choice_txt))
-        continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
+        continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+            R.color.custom_color_slider_widget_unselected
+        ))
 
         btn_rando.setOnClickListener {
-            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_primary_
+            ))
             btn_rando.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Randonnée")) {
@@ -55,7 +58,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             }
         }
         btn_escalade.setOnClickListener {
-            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_primary_
+            ))
             btn_escalade.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Escalade")) {
@@ -67,7 +72,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             }
         }
         btn_snow.setOnClickListener {
-            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_primary_))
+            continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_primary_
+            ))
             btn_snow.setAlpha(1.0f)
             val s = sport_list.size;
             if (s < 3 && !sport_list.contains("Snow")) {
@@ -86,7 +93,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
             sport_list.remove(txtV_list[0].text)
-            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_slider_widget_unselected
+            ))
             txtV_list[0].setText("")
         }
 
@@ -97,7 +106,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
             sport_list.remove(txtV_list[1].text)
-            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_slider_widget_unselected
+            ))
             txtV_list[1].setText("")
         }
 
@@ -108,7 +119,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
             sport_list.remove(txtV_list[2].text)
-            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.custom_color_slider_widget_unselected))
+            if (sport_list.size == 0) continue_btn?.setBackgroundColor(ContextCompat.getColor(requireActivity(),
+                R.color.custom_color_slider_widget_unselected
+            ))
             txtV_list[2].setText("")
         }
 

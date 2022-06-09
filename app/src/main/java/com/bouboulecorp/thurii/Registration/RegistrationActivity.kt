@@ -1,9 +1,10 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.Registration.RegistrationFragment
 
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {

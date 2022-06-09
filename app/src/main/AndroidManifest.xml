@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thurii">
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".Registration.RegistrationFragment.RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
