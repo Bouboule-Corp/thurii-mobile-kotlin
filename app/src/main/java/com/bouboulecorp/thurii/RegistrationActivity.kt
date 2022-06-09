@@ -18,13 +18,16 @@ class RegistrationActivity : AppCompatActivity() {
         setContentView(binding.root)
         val homeFragment = FragmentRegistrationGender()
         val fragment: Fragment? = supportFragmentManager.findFragmentByTag(
-                                    FragmentRegistrationGender::class.java.simpleName)
+            FragmentRegistrationGender::class.java.simpleName
+        )
         val progress = findViewById<ProgressBar>(R.id.step_bar)
 
         if (fragment !is FragmentRegistrationGender) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainer,
-                        homeFragment, FragmentRegistrationGender::class.java.simpleName)
+                .add(
+                    R.id.fragmentContainer, homeFragment,
+                    FragmentRegistrationGender::class.java.simpleName
+                )
                 .commit()
         }
 
