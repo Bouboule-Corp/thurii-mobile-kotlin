@@ -32,4 +32,9 @@ jobs:
         with:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
-          script: ./gradlew connectedChec
+          script: |
+            ./gradlew connectedChec
+             ./gradlew koverMergedXmlReport
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_KEY }} 
