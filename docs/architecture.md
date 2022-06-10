@@ -37,7 +37,9 @@ According to [android developers](https://developer.android.com/topic/architectu
 
 ### Getting started : comming soon...
 
-### Example : comming soon...
+### Example :
+
+[Here](https://github.com/larroyo3/Example_Thurii_App)
 
 ## Additional documentation
 
