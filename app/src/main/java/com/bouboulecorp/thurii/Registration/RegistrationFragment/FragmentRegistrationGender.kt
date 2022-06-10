@@ -1,4 +1,5 @@
 package com.bouboulecorp.thurii.Registration.RegistrationFragment
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +11,6 @@ import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.R
 
 class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {

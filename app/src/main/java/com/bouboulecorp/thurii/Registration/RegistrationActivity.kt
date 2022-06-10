@@ -33,9 +33,22 @@ class RegistrationActivity : AppCompatActivity() {
         }
 
         binding.continueBtn.setOnClickListener {
+            if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
             progress.incrementProgressBy(25)
         }
         binding.backbtn.setOnClickListener {
+            if (progress.progress == 50) {
+                replaceFragment(FragmentRegistrationGender())
+                progress.setProgress(25)
+            }
         }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+        fragmentTransaction.commit()
     }
 }

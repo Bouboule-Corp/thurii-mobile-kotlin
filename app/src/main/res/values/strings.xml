@@ -6,4 +6,9 @@
     <string name="female">Femme</string>
     <string name="male">Homme</string>
     <string name="btn_continue">Continue</string>
+    <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties?</string>
+    <string name="register_sport_des">Classez vos pratiques par ordre de préférence.</string>
+    <string name="rando">Randonée</string>
+    <string name="escalade">Escalade</string>
+    <string name="snow">Ski/Snow</string>
 </resources>
