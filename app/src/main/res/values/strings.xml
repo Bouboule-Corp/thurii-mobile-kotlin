@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Thurii</string>
+    <string name="back">Back Button</string>
+    <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
+    <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
+    <string name="female">Femme</string>
+    <string name="male">Homme</string>
+    <string name="btn_continue">Continue</string>
 </resources>
