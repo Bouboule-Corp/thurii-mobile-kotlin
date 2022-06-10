@@ -13,11 +13,11 @@ on:
   
 jobs:
   instrumented_test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 45
     strategy:
       matrix:
-        api-level: [28]
+        api-level: [28, 29, 30, 31]
         target: [google_apis]
     steps:
       - uses: actions/checkout@v3
