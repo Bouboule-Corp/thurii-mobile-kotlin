@@ -5,8 +5,13 @@
       <map>
         <entry key="app/src/main/res/layout/activity_log_in_sign_in_menu.xml" value="0.25022665457842247" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21354166666666666" />
-        <entry key="app/src/main/res/layout/activity_login_in_sign_in_menu.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_registration_way.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/layout/registration_gender.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/registration_info.xml" value="0.1308876811594203" />
+        <entry key="app/src/main/res/layout/registration_sport.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/registration_way.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -13,6 +13,9 @@
             android:name=".activities.LogIn.LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".Registration.RegistrationFragment.RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.LogInSignInMenu.LogInSignInMenuActivity"
             android:exported="true">
             <intent-filter>

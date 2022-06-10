@@ -29,6 +29,7 @@
         <item name="android:textColor">@color/custom_color_text_primary</item>
         <item name="backgroundTint">@color/custom_color_secondary_btn</item>
         <item name="cornerRadius">8dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_goneMarginBottom">104dp</item>
         <item name="strokeColor">@color/custom_color_border_btn</item>
         <item name="strokeWidth">2dp</item>
@@ -47,6 +48,7 @@
         <item name="android:textColor">@color/custom_color_text_primary</item>
         <item name="backgroundTint">@color/custom_color_secondary_btn</item>
         <item name="cornerRadius">8dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_goneMarginBottom">104dp</item>
     </style>
 
@@ -62,6 +64,7 @@
         <item name="android:textColor">@color/custom_color_text_primary</item>
         <item name="backgroundTint">@color/custom_color_primary_</item>
         <item name="cornerRadius">8dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_goneMarginBottom">104dp</item>
     </style>
 
@@ -77,6 +80,7 @@
         <item name="android:textColor">@color/custom_color_text_secondary</item>
         <item name="backgroundTint">@color/custom_color_primary_</item>
         <item name="cornerRadius">8dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_goneMarginBottom">104dp</item>
     </style>
 </resources>

@@ -19,7 +19,7 @@
     <Button
         android:id="@+id/sign_in_menu_button"
         style="@style/ButtonGreenStyle"
-        android:onClick="goToSigninPage"
+        android:onClick="goToSignInPage"
         android:text="@string/log_in_button"
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/log_in_menu_button"
@@ -29,7 +29,7 @@
     <Button
         android:id="@+id/log_in_menu_button"
         style="@style/ButtonStroke"
-        android:onClick="goToLoginPage"
+        android:onClick="goToLogInPage"
         android:text="@string/sign_in_button"
         android:layout_marginBottom="107dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"

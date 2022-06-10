@@ -24,12 +24,12 @@ class LogInSignInMenuActivity : AppCompatActivity() {
         mTextView.movementMethod = LinkMovementMethod.getInstance()
     }
 
-    fun goToLoginPage(view: View) {
+    fun goToLogInPage(view: View) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
-    fun goToSigninPage(view: View) {
+    fun goToSignInPage(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
