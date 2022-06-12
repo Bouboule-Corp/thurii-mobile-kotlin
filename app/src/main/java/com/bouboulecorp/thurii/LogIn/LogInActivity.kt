@@ -24,7 +24,7 @@ class LogInActivity : AppCompatActivity() {
 
         if (editTextPassword.inputType == 129) { // set "textPassword" to "textVisiblePassword"
             editTextPassword.inputType = 145
-        } else if (editTextPassword.inputType == 145) { // set "textVisiblePassword" to "textPassword"
+        } else if (editTextPassword.inputType == 145) { // set "VisiblePassword" to "Password"
             editTextPassword.inputType = 129
         }
 
