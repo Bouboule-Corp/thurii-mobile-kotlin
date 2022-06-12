@@ -90,6 +90,7 @@
         android:layout_marginEnd="19dp"
         android:text="@string/condition_politic"
         android:textColor="@color/white"
+        android:textColorLink="@color/custom_color_primary_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>

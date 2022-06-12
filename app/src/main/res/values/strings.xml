@@ -36,7 +36,7 @@
     <string name="register_way_des">Créez un compte pour accéder aux autres profils, à la création d\'itiniraire, à votre programme d\'entaînement et au suivi de vos sessions.</string>
     <string name="register_google">S\'inscrire avec Google</string>
     <string name="register_email">Continue avec un email</string>
-    <string name="condition_politic">En continuant, j\'accepte les Conditions d\'utilisation et la Politique de confidentialité de Thurii.</string>
+    <string name="condition_politic">En continuant, j\'accepte les  <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation</a> et la  <a href="https://youtu.be/dQw4w9WgXcQ">Politique de confidentialité</a> de Thurii.</string>
     <string name="no_share_info">Rien n\'est partagé sans votre autorisation.</string>
 
     <string-array name="weights">
@@ -255,4 +255,16 @@
         <item>218 cm</item>
         <item>219 cm</item>
     </string-array>
+
+    <!--    registration email form-->
+    <string name="pseudo">Pseudo</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+
+    <!--    double auth-->
+    <string name="double_auth_title">Double authentification</string>
+    <string name="numero">Mon numéro</string>
+    <string name="double_auth_des">Appuie sur Continuer pour recevoir un message de la part de Tinder avec un code de vérification. Des frais liés à l’envoi de messages et/ou d’utilisation de données peuvent s’appliquer. Le numéro de téléphone vérifié pourra être utilisé pour te connecter. Découvre ce qui se passe si tu changes de numéro de téléphone.</string>
 </resources>
