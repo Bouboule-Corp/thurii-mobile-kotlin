@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private val sessionFragment = SessionFragment()
     private val mapFragment = MapFragment()
 
-    override fun  onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         replaceFragment(HomeFragment())
