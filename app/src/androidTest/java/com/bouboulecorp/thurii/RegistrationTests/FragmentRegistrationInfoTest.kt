@@ -1,10 +1,12 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.RegistrationTests
 
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import com.bouboulecorp.thurii.R
+import com.bouboulecorp.thurii.Registration.RegistrationFragment.FragmentRegistrationInfo
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -39,7 +41,7 @@ class FragmentRegistrationInfoTest{
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
-        onView(withId(R.id.weight)).check(matches(isDisplayed()))
+        onView(withId(R.id.weight_spinner)).check(matches(isDisplayed()))
     }
 
     @Test
@@ -47,6 +49,6 @@ class FragmentRegistrationInfoTest{
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
-        onView(withId(R.id.height_layout)).check(matches(isDisplayed()))
+        onView(withId(R.id.height_spinner)).check(matches(isDisplayed()))
     }
 }

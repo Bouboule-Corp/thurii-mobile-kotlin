@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/clara/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/spinner_bg.xml" value="0.1715" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_info.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_sport.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/simplre_sinner_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/spinner_item.xml" value="0.36614583333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_registration_way.xml" value="0.14791666666666667" />
