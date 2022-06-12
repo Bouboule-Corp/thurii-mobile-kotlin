@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.17985611510791366" />
+        <entry key="app/src/main/res/drawable/register_up_down_border.xml" value="0.269" />
         <entry key="..\:/Users/clara/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/spinner_bg.xml" value="0.1715" />
         <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/activity_log_in_sign_in_menu.xml" value="0.29270833333333335" />
@@ -15,11 +17,12 @@
         <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/simplre_sinner_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/spinner_item.xml" value="0.36614583333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_registration_way.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/registration_gender.xml" value="0.1" />
         <entry key="app/src/main/res/layout/registration_info.xml" value="0.1308876811594203" />
-        <entry key="app/src/main/res/layout/registration_sport.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/registration_sport.xml" value="0.4417910447761194" />
         <entry key="app/src/main/res/layout/registration_way.xml" value="0.25" />
       </map>
     </option>

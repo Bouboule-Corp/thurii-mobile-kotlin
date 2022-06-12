@@ -26,9 +26,8 @@ class LogInSignInMenuTests {
     }
 
     @Test
-    fun test_goToLoginActivtiy() {
+    fun test_isTextLink() {
         ActivityScenario.launch(LogInSignInMenuActivity::class.java)
-        onView(withId(R.id.sign_in_menu_button)).check(matches(isDisplayed()))
         onView(withId(R.id.text_link)).check(matches(ViewMatchers.withText(R.string.link)))
     }
 }
