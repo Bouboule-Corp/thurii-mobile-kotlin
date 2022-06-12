@@ -5,7 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.Button
+import android.widget.RelativeLayout
+import android.widget.TextView
+import android.widget.Spinner
+import android.widget.AdapterView
+import android.widget.Toast
+import android.widget.ArrayAdapter
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.R
@@ -35,7 +41,6 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
         val birthday = lay.findViewById<RelativeLayout>(R.id.date_layout)
         val dayRes = lay.findViewById<TextView>(R.id.date_res)
         birthday_listener(birthday, dayRes)
-
         // weight
         val weightAdapter = ArrayAdapter.createFromResource(
             requireActivity(),
@@ -44,7 +49,6 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
         )
         val weight = lay.findViewById<Spinner>(R.id.weight_spinner)
         weight_listener(weightAdapter, weight)
-
         // height
         val heightAdapter = ArrayAdapter.createFromResource(
             requireActivity(),
@@ -53,16 +57,15 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
         )
         val height = lay.findViewById<Spinner>(R.id.height_spinner)
         height_listener(heightAdapter, height)
-
     }
 
     fun birthday_listener(birthday: RelativeLayout, dayRes: TextView) {
-        birthday.setOnClickListener{
+        birthday.setOnClickListener {
             val getDate = Calendar.getInstance()
             val datePicker = DatePickerDialog(
                 requireActivity(),
                 android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-                DatePickerDialog.OnDateSetListener{
+                DatePickerDialog.OnDateSetListener {
                         datePicker, i, i2, i3 ->
                     val selectDate = Calendar.getInstance()
                     selectDate.set(Calendar.YEAR, i)
@@ -81,11 +84,14 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
     }
 
     fun weight_listener(weightAdapter: ArrayAdapter<CharSequence>, weight: Spinner) {
-       weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         weight.adapter = weightAdapter
-        weight.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+        weight.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-                parent: AdapterView<*>?, view: View?, position: Int, id: Long
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
             ) {
                 if (position != 0) {
                     val selectedItem = parent!!.getItemAtPosition(position)
@@ -107,9 +113,12 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
         )
         heightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         height.adapter = heightAdapter
-        height.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+        height.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-                parent: AdapterView<*>?, view: View?, position: Int, id: Long
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
             ) {
                 if (position != 0) {
                     val selectedItem = parent!!.getItemAtPosition(position)
