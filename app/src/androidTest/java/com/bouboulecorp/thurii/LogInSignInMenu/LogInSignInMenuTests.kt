@@ -32,3 +32,4 @@ class LogInSignInMenuTests {
         onView(withId(R.id.text_link)).check(matches(ViewMatchers.withText(R.string.link)))
     }
 }
+
