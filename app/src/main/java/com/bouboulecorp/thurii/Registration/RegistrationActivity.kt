@@ -50,8 +50,7 @@ class RegistrationActivity : AppCompatActivity() {
             } else if (progress.progress == 100) {
                 replaceFragment(FragmentRegistrationWay())
                 progress.setProgress(75)
-            }
-            if (progress.progress == 25) {
+            } else if (progress.progress == 25) {
                 val intent = Intent(this, LogInSignInMenuActivity::class.java)
                 startActivity(intent)
             }
