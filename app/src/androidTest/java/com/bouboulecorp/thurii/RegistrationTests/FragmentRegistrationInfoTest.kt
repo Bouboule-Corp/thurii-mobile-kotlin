@@ -11,13 +11,17 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
-class FragmentRegistrationInfoTest{
+class FragmentRegistrationInfoTest {
     @Test
     fun test_isFragmentInfoTitleCorrect() {
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
-        onView(withId(R.id.info_title)).check(matches(withText(R.string.register_info_title)))
+        onView(withId(R.id.info_title)).check(
+            matches(
+                withText(R.string.register_info_title)
+            )
+        )
     }
 
     @Test
@@ -25,11 +29,15 @@ class FragmentRegistrationInfoTest{
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
-        onView(withId(R.id.info_des)).check(matches(withText(R.string.register_info_des)))
+        onView(withId(R.id.info_des)).check(
+            matches(
+                withText(R.string.register_info_des)
+            )
+        )
     }
 
     @Test
-    fun test_isFragmentDropBirthdayDisplayed() {
+    fun test_isDateLayoutDisplayed() {
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
@@ -37,7 +45,56 @@ class FragmentRegistrationInfoTest{
     }
 
     @Test
-    fun test_isFragmentDropWeightDisplayed() {
+    fun test_isBirthdayTxtDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.date_txt)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_isBirthdayTxtCorrect() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.date_txt)).check(matches(withText(R.string.birthday)))
+    }
+
+    @Test
+    fun test_isBirthdayResDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.date_res)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_isBirthdayBtnDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.date_btn)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_isLayoutWeightDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.weightLayout)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_isWeightTxtDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.poids)).check(matches(isDisplayed()))
+        onView(withId(R.id.poids)).check(matches(withText(R.string.weight)))
+    }
+
+    @Test
+    fun test_isWeightSpinnerDisplayed() {
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
@@ -45,7 +102,24 @@ class FragmentRegistrationInfoTest{
     }
 
     @Test
-    fun test_isFragmentDropHeightDisplayed() {
+    fun test_isLayoutHeightDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.heightLayout)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_isHeightTxtDisplayed() {
+        launchFragmentInContainer<FragmentRegistrationInfo>(
+            fragmentArgs = null
+        )
+        onView(withId(R.id.height)).check(matches(isDisplayed()))
+        onView(withId(R.id.height)).check(matches(withText(R.string.size)))
+    }
+
+    @Test
+    fun test_isHeightSpinnerDisplayed() {
         launchFragmentInContainer<FragmentRegistrationInfo>(
             fragmentArgs = null
         )
