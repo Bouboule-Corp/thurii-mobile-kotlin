@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/custom_color_background"
-    tools:context=".activities.LogInSignInMenu.LogInSignInMenuActivity">
+    tools:context=".LogInSignInMenu.LogInSignInMenuActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image_title"
         android:layout_width="171dp"
         android:layout_height="72dp"
         android:layout_marginBottom="28dp"
@@ -32,16 +32,16 @@
         android:onClick="goToLogInPage"
         android:text="@string/sign_in_button"
         android:layout_marginBottom="107dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/text_link"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_link"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:text="@string/test_link"
+        android:text="@string/link"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorLink="@color/custom_color_primary_"

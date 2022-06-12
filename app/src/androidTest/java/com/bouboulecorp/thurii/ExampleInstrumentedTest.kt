@@ -28,10 +28,4 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.bouboulecorp.thurii", appContext.packageName)
     }
-
-    @Test
-    fun greeterSaysHello() {
-        onView(withId(R.id.log_in_menu_button)).perform(click())
-        onView(withText("loginActivity")).check(matches(isDisplayed()))
-    }
 }

@@ -1,13 +1,13 @@
-package com.bouboulecorp.thurii.activities.LogInSignInMenu
+package com.bouboulecorp.thurii.LogInSignInMenu
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.TextView
-import com.bouboulecorp.thurii.MainActivity
 import com.bouboulecorp.thurii.R
 import androidx.appcompat.app.AppCompatActivity
-import com.bouboulecorp.thurii.activities.LogIn.LoginActivity
+import com.bouboulecorp.thurii.LogIn.LoginActivity
+import com.bouboulecorp.thurii.Registration.RegistrationFragment.RegistrationActivity
 
 class LogInSignInMenuActivity : AppCompatActivity() {
 
@@ -17,7 +17,7 @@ class LogInSignInMenuActivity : AppCompatActivity() {
 
         // Declaring and Initializing
         // the TextView from the layout file
-        val mTextView = findViewById<TextView>(R.id.textView)
+        val mTextView = findViewById<TextView>(R.id.text_link)
 
         // Finding and displaying the content
         // that consists a URL as a hyperlink
@@ -30,7 +30,7 @@ class LogInSignInMenuActivity : AppCompatActivity() {
     }
 
     fun goToSignInPage(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, RegistrationActivity::class.java)
         startActivity(intent)
     }
 }

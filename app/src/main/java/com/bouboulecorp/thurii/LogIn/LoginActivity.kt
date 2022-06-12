@@ -1,4 +1,4 @@
-package com.bouboulecorp.thurii.activities.LogIn
+package com.bouboulecorp.thurii.LogIn
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bouboulecorp.thurii.R
