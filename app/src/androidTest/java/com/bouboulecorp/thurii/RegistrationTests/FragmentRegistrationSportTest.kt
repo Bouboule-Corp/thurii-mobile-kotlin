@@ -1,22 +1,30 @@
-package com.bouboulecorp.thurii
+package com.bouboulecorp.thurii.RegistrationTests
 
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.espresso.matcher.ViewMatchers.withText
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import com.bouboulecorp.thurii.R
+import com.bouboulecorp.thurii.Registration.RegistrationFragment.FragmentRegistrationSport
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
-class FragmentRegistrationSportTest{
+class FragmentRegistrationSportTest {
+
     @Test
     fun test_isFragmentSportTitleCorrect() {
         launchFragmentInContainer<FragmentRegistrationSport>(
             fragmentArgs = null
         )
-        onView(withId(R.id.sport_title))
-            .check(matches(withText(R.string.register_sport_title)))
+        onView(withId(R.id.sport_title)).check(
+            matches(
+                withText(R.string.register_sport_title)
+            )
+        )
     }
 
     @Test
@@ -24,7 +32,11 @@ class FragmentRegistrationSportTest{
         launchFragmentInContainer<FragmentRegistrationSport>(
             fragmentArgs = null
         )
-        onView(withId(R.id.sport_des)).check(matches(withText(R.string.register_sport_des)))
+        onView(withId(R.id.sport_des)).check(
+            matches(
+                withText(R.string.register_sport_des)
+            )
+        )
     }
 
     @Test

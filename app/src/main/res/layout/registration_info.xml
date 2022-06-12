@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0B0F0F"
@@ -51,7 +50,8 @@
             android:id="@+id/date_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date de naissance"
+            android:layout_weight="1"
+            android:text="@string/birthday"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -69,7 +69,6 @@
 
         <ImageView
             android:id="@+id/date_btn"
-            android:contentDescription="dropdown"
             android:layout_width="17dp"
             android:layout_height="12dp"
             android:layout_alignParentEnd="true"
@@ -80,14 +79,15 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/weight"
+    <RelativeLayout
+        android:id="@+id/weightLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginTop="34dp"
-        android:orientation="horizontal"
+        android:background="@drawable/register_up_down_border"
+        android:gravity="center_vertical"
+        android:paddingVertical="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_layout">
 
@@ -96,35 +96,60 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Poids"
+            android:text="@string/weight"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/weight_layout"
+            android:id="@+id/weight_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="19dp"
-            android:layout_marginEnd="19dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
             android:background="@drawable/spinner_bg"
+            android:backgroundTint="@color/white"
             android:dropDownWidth="200dp"
-            android:paddingVertical="25dp" />
+            android:spinnerMode="dropdown" />
 
-    </LinearLayout>
 
-    <Spinner
-        android:id="@+id/height_layout"
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heightLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="19dp"
+        android:background="@drawable/register_up_down_border"
+        android:gravity="center_vertical"
         android:paddingVertical="25dp"
-        android:dropDownWidth="200dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weight"
-        android:background="@drawable/spinner_bg"/>
+        app:layout_constraintTop_toBottomOf="@+id/weightLayout">
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/size"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/height_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_bg"
+            android:backgroundTint="@color/white"
+            android:dropDownWidth="200dp"
+            android:spinnerMode="dropdown" />
+
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

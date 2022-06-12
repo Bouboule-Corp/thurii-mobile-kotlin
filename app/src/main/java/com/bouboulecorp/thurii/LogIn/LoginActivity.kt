@@ -1,11 +1,11 @@
-package com.bouboulecorp.thurii
-
+package com.bouboulecorp.thurii.LogIn
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.bouboulecorp.thurii.R
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
     }
 }

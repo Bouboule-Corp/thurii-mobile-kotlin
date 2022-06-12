@@ -6,7 +6,7 @@ name: Build & Unit Tests
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   pull_request:
-    types: [opened, reopened]
+    types: [opened, reopened, synchronize]
     branches: 
       - master
       - dev
@@ -26,9 +26,9 @@ jobs:
         github_token: ${{ secrets.GTHUB_TOKEN }}
         reporter: github-pr-review
         fail_on_error: true
-        level: warning
+        level: error
 
-  build:
+  build_unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
