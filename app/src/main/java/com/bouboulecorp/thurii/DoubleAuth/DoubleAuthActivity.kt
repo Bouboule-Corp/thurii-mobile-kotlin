@@ -1,11 +1,15 @@
 package com.bouboulecorp.thurii.DoubleAuth
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import android.widget.*
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.EditText
+import android.widget.Button
+import android.widget.AdapterView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.bouboulecorp.thurii.R
@@ -36,10 +40,13 @@ class DoubleAuthActivity : AppCompatActivity() {
         tel_number.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {}
 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
-            }
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            override fun beforeTextChanged(
+                s: CharSequence, start: Int, count: Int, after: Int
+            ) {}
+
+            override fun onTextChanged(
+                p0: CharSequence?, p1: Int, p2: Int, p3: Int
+            ) {
                 continue_btn.setBackgroundColor(
                     ContextCompat.getColor(
                         applicationContext, R.color.custom_color_primary_
@@ -49,7 +56,7 @@ class DoubleAuthActivity : AppCompatActivity() {
         })
     }
 
-    fun tel_listener(TelAdapater:ArrayAdapter<CharSequence>, tels:Spinner) {
+    fun tel_listener(TelAdapater: ArrayAdapter<CharSequence>, tels: Spinner) {
         TelAdapater.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         tels.adapter = TelAdapater
         tels.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

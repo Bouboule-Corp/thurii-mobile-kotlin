@@ -27,7 +27,7 @@ class RegisterEmailActivity : AppCompatActivity() {
     }
 
     fun goToLastFragment(view: View) {
-        super.onBackPressed();
+        super.onBackPressed()
     }
 
     fun continueBtnActive() {
@@ -36,10 +36,13 @@ class RegisterEmailActivity : AppCompatActivity() {
         et_password.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {}
 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
-            }
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            override fun beforeTextChanged(
+                s: CharSequence, start: Int, count: Int, after: Int
+            ) {}
+
+            override fun onTextChanged(
+                p0: CharSequence?, p1: Int, p2: Int, p3: Int
+            ) {
                 continue_btn.setBackgroundColor(
                     ContextCompat.getColor(
                         applicationContext, R.color.custom_color_primary_
@@ -54,10 +57,13 @@ class RegisterEmailActivity : AppCompatActivity() {
         et_pseudo.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {}
 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
-            }
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            override fun beforeTextChanged(
+                s: CharSequence, start: Int, count: Int, after: Int
+            ) {}
+
+            override fun onTextChanged(
+                p0: CharSequence?, p1: Int, p2: Int, p3: Int
+            ) {
                 checked.visibility = View.VISIBLE
             }
         })
