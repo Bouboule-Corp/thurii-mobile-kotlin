@@ -1,9 +1,11 @@
 package com.bouboulecorp.thurii.Registration.RegistrationFragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.LogInSignInMenu.LogInSignInMenuActivity
 import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
@@ -40,6 +42,10 @@ class RegistrationActivity : AppCompatActivity() {
             if (progress.progress == 50) {
                 replaceFragment(FragmentRegistrationGender())
                 progress.setProgress(25)
+            }
+            if (progress.progress == 25) {
+                val intent = Intent(this, LogInSignInMenuActivity::class.java)
+                startActivity(intent)
             }
         }
     }
