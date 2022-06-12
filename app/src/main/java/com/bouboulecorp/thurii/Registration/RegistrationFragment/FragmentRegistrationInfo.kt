@@ -21,7 +21,7 @@ import java.util.*
 class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let{
+        arguments?.let {
         }
     }
 
