@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         replaceFragment(HomeFragment())
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNavigation.setOnNavigationItemSelectedListener {
+        bottomNavigation.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.ic_home -> replaceFragment(homeFragment)
                 R.id.ic_map -> replaceFragment(mapFragment)
