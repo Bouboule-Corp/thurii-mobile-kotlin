@@ -78,7 +78,7 @@
         <item name="android:textSize">15sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/custom_color_text_secondary</item>
-        <item name="backgroundTint">@color/custom_color_primary_</item>
+        <item name="backgroundTint">@color/custom_color_slider_widget_unselected</item>
         <item name="cornerRadius">8dp</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_goneMarginBottom">104dp</item>

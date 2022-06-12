@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17985611510791366" />
+        <entry key="app/src/main/res/drawable/icon_eye_close_line.xml" value="0.176" />
         <entry key="app/src/main/res/drawable/icon_home_selected.xml" value="0.269" />
         <entry key="app/src/main/res/drawable/icon_home_selector.xml" value="0.268" />
         <entry key="app/src/main/res/drawable/icon_map_selector.xml" value="0.269" />
@@ -21,10 +22,13 @@
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.209375" />
         <entry key="app/src/main/res/layout/fragment_registration_way.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_session.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/register_double_auth.xml" value="0.1671875" />
+        <entry key="app/src/main/res/layout/registration_email.xml" value="0.1671875" />
         <entry key="app/src/main/res/layout/registration_gender.xml" value="0.1" />
         <entry key="app/src/main/res/layout/registration_info.xml" value="0.1308876811594203" />
         <entry key="app/src/main/res/layout/registration_sport.xml" value="0.4417910447761194" />
         <entry key="app/src/main/res/layout/registration_way.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/spinner_item.xml" value="0.1671875" />
         <entry key="app/src/main/res/menu/menu_home_page.xml" value="0.209375" />
       </map>
     </option>
