@@ -8,7 +8,6 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -23,14 +22,15 @@ class RegisterEmailActivity : AppCompatActivity() {
         val checked = findViewById<ImageView>(R.id.checked)
 
         checked.visibility = View.INVISIBLE
-        ContinueBtnActive()
+        continueBtnActive()
+        checkedIconActive(checked)
     }
 
     fun goToLastFragment(view: View) {
         super.onBackPressed();
     }
 
-    fun ContinueBtnActive() {
+    fun continueBtnActive() {
         val et_password = findViewById<EditText>(R.id.et_password)
         val continue_btn = findViewById<Button>(R.id.continueBtn)
         et_password.addTextChangedListener(object : TextWatcher {
@@ -45,6 +45,20 @@ class RegisterEmailActivity : AppCompatActivity() {
                         applicationContext, R.color.custom_color_primary_
                     )
                 )
+            }
+        })
+    }
+
+    fun checkedIconActive(checked: ImageView) {
+        val et_pseudo = findViewById<EditText>(R.id.et_pseudo)
+        et_pseudo.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable) {}
+
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
+            }
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                checked.visibility = View.VISIBLE
             }
         })
     }
