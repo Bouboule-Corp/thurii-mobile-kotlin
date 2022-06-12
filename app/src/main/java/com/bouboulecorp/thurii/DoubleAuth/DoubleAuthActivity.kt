@@ -36,7 +36,7 @@ class DoubleAuthActivity : AppCompatActivity() {
 
     fun continueBtnActive() {
         val tel_number = findViewById<EditText>(R.id.tel_number)
-        val continue_btn = findViewById<Button>(R.id.continueBtn)
+        val continue_btn = findViewById<Button>(R.id.continueBtnDoubleAuth)
         tel_number.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {}
 

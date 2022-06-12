@@ -31,7 +31,7 @@ class RegisterEmailActivity : AppCompatActivity() {
 
     fun continueBtnActive() {
         val et_password = findViewById<EditText>(R.id.et_password)
-        val continue_btn = findViewById<Button>(R.id.continueBtn)
+        val continue_btn = findViewById<Button>(R.id.continueBtnEmail)
         et_password.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {}
 
