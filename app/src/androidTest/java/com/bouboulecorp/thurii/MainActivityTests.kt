@@ -23,3 +23,4 @@ class MainActivityTests {
         onView(withId(R.id.Fragment_layout)).check(matches(isDisplayed()))
     }
 }
+
