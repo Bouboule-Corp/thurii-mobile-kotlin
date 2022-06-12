@@ -36,12 +36,16 @@ class RegistrationActivity : AppCompatActivity() {
 
         binding.continueBtn.setOnClickListener {
             if (progress.progress == 25) replaceFragment(FragmentRegistrationSport())
+            else if (progress.progress == 50) replaceFragment(FragmentRegistrationInfo())
             progress.incrementProgressBy(25)
         }
         binding.backbtn.setOnClickListener {
             if (progress.progress == 50) {
                 replaceFragment(FragmentRegistrationGender())
                 progress.setProgress(25)
+            } else if (progress.progress == 75) {
+                replaceFragment(FragmentRegistrationSport())
+                progress.setProgress(50)
             }
             if (progress.progress == 25) {
                 val intent = Intent(this, LogInSignInMenuActivity::class.java)
