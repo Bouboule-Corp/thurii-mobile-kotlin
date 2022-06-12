@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.TextView
 import com.bouboulecorp.thurii.R
 import androidx.appcompat.app.AppCompatActivity
-import com.bouboulecorp.thurii.LogIn.LoginActivity
+import com.bouboulecorp.thurii.LogIn.LogInActivity
 import com.bouboulecorp.thurii.Registration.RegistrationFragment.RegistrationActivity
 
 class LogInSignInMenuActivity : AppCompatActivity() {
@@ -25,7 +25,7 @@ class LogInSignInMenuActivity : AppCompatActivity() {
     }
 
     fun goToLogInPage(view: View) {
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, LogInActivity::class.java)
         startActivity(intent)
     }
 

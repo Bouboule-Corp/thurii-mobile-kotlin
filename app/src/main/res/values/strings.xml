@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">Thurii</string>
 
+    <!-- Common string -->
+    <string name="btn_continue">Continuer</string>
 
     <!-- Login SignIn Menu -->
     <string name="log_in_button">S\'inscrire</string>
     <string name="sign_in_button">J\'ai déjà un compte</string>
-    <string name="link">En continuant, vous acceptez nos <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation </a>et <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a></string>
+    <string name="link">En continuant, vous acceptez nos <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation </a>et <a href="https://youtu.be/dQw4w9WgXcQ">Politique de confidentialité </a></string>
+
+    <!-- LogIn -->
+    <string name="password">Mot de passe</string>
+    <string name="email">E-mail</string>
 
     <!-- Registration -->
     <string name="back">Back Button</string>
@@ -13,7 +19,6 @@
     <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
     <string name="female">Femme</string>
     <string name="male">Homme</string>
-    <string name="btn_continue">Continue</string>
     <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties?</string>
     <string name="register_sport_des">Classez vos pratiques par ordre de préférence.</string>
     <string name="rando">Randonée</string>

@@ -43,7 +43,7 @@ class RegistrationActivity : AppCompatActivity() {
                 replaceFragment(FragmentRegistrationGender())
                 progress.setProgress(25)
             }
-            if (progress.progress == 25) {
+            else if (progress.progress == 25) {
                 val intent = Intent(this, LogInSignInMenuActivity::class.java)
                 startActivity(intent)
             }
