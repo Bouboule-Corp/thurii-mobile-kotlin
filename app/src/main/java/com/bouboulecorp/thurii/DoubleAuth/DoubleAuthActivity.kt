@@ -31,7 +31,7 @@ class DoubleAuthActivity : AppCompatActivity() {
     }
 
     fun goToRegisterMail(view: View) {
-        super.onBackPressed();
+        super.onBackPressed()
     }
 
     fun continueBtnActive() {
