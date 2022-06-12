@@ -1,21 +1,19 @@
 package com.bouboulecorp.thurii.DoubleAuth
 
+import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.bouboulecorp.thurii.R
 
 class DoubleAuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.register_double_auth)
-
-        val back_btn = findViewById<ImageButton>(R.id.backbtn)
-
-        back_btn.setOnClickListener {
-            super.onBackPressed();
-        }
 
         val TelAdapter = ArrayAdapter.createFromResource(
             this,
@@ -24,6 +22,31 @@ class DoubleAuthActivity : AppCompatActivity() {
         )
         val tels = findViewById<Spinner>(R.id.tel_spinner)
         tel_listener(TelAdapter, tels)
+
+        continueBtnActive()
+    }
+
+    fun goToRegisterMail(view: View) {
+        super.onBackPressed();
+    }
+
+    fun continueBtnActive() {
+        val tel_number = findViewById<EditText>(R.id.tel_number)
+        val continue_btn = findViewById<Button>(R.id.continueBtn)
+        tel_number.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable) {}
+
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
+            }
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                continue_btn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        applicationContext, R.color.custom_color_primary_
+                    )
+                )
+            }
+        })
     }
 
     fun tel_listener(TelAdapater:ArrayAdapter<CharSequence>, tels:Spinner) {
