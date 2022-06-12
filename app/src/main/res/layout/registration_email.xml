@@ -164,7 +164,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/continueBtn"
+        android:id="@+id/continueBtnEmail"
         style="@style/ButtonGreyStyle"
         android:layout_marginBottom="20dp"
         android:text="@string/btn_continue"

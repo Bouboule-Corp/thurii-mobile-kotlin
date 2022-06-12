@@ -69,9 +69,9 @@ class DoubleAuthActivityTest {
     }
 
     @Test
-    fun test_isContinueBtnDisplayed() {
+    fun test_isContinueBtnDoubleAuthDisplayed() {
         ActivityScenario.launch(DoubleAuthActivity::class.java)
-        onView(withId(R.id.continueBtn))
+        onView(withId(R.id.continueBtnDoubleAuth))
             .check(matches(isDisplayed()))
     }
 

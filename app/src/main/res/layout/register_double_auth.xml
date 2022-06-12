@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tel_connect" />
 
     <Button
-        android:id="@+id/continueBtn"
+        android:id="@+id/continueBtnDoubleAuth"
         style="@style/ButtonGreyStyle"
         android:layout_marginTop="80dp"
         android:text="@string/btn_continue"

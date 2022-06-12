@@ -81,7 +81,7 @@ class RegisterEmailActivityTest {
     @Test
     fun test_isContinueBtnEmailDisplayed() {
         ActivityScenario.launch(RegisterEmailActivity::class.java)
-        onView(withId(R.id.continueBtn))
+        onView(withId(R.id.continueBtnEmail))
             .check(matches(isDisplayed()))
     }
 
