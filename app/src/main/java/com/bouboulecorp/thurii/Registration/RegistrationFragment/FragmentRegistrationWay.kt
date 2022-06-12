@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.EmailRegistration.RegisterEmailActivity
-import com.bouboulecorp.thurii.LogIn.LoginActivity
 import com.bouboulecorp.thurii.R
 
 class FragmentRegistrationWay : Fragment(R.layout.registration_way) {
