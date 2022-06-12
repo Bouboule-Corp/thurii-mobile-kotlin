@@ -1,9 +1,11 @@
 package com.bouboulecorp.thurii.Registration.RegistrationFragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.bouboulecorp.thurii.LogInSignInMenu.LogInSignInMenuActivity
 import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
@@ -44,6 +46,10 @@ class RegistrationActivity : AppCompatActivity() {
             } else if (progress.progress == 75) {
                 replaceFragment(FragmentRegistrationSport())
                 progress.setProgress(50)
+            }
+            if (progress.progress == 25) {
+                val intent = Intent(this, LogInSignInMenuActivity::class.java)
+                startActivity(intent)
             }
         }
     }

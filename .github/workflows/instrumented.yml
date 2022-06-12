@@ -7,17 +7,18 @@ on:
     types: [opened, reopened]
     branches: 
       - master
+      - dev
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 jobs:
   instrumented_test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 45
     strategy:
       matrix:
-        api-level: [28]
+        api-level: [28, 29, 30]
         target: [google_apis]
     steps:
       - uses: actions/checkout@v3
@@ -31,4 +32,9 @@ jobs:
         with:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
-          script: ./gradlew connectedChec
+          script: |
+            ./gradlew connectedChec
+             ./gradlew koverMergedXmlReport
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_KEY }} 

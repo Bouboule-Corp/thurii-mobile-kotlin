@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Thurii</string>
+
+
+    <!-- Login SignIn Menu -->
+    <string name="log_in_button">S\'inscrire</string>
+    <string name="sign_in_button">J\'ai déjà un compte</string>
+    <string name="link">En continuant, vous acceptez nos <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation </a>et <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a></string>
+
+    <!-- Registration -->
     <string name="back">Back Button</string>
     <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
     <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
