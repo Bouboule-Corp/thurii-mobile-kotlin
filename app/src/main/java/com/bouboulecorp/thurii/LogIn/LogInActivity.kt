@@ -19,17 +19,16 @@ class LogInActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun changeStatePassword(view:View) {
+    fun changeStatePassword(view: View) {
         val editTextPassword = findViewById<EditText>(R.id.editTextTextPassword_login)
 
-        if (editTextPassword.inputType == 129) {       //set "textPassword" to "textVisiblePassword"
+        if (editTextPassword.inputType == 129) { // set "textPassword" to "textVisiblePassword"
             editTextPassword.inputType = 145
-        }
-        else if (editTextPassword.inputType == 145) {  //set "textVisiblePassword" to "textPassword"
+        } else if (editTextPassword.inputType == 145) { // set "textVisiblePassword" to "textPassword"
             editTextPassword.inputType = 129
         }
 
-        //placing cursor at the end of the text
+        // placing cursor at the end of the text
         editTextPassword.setSelection(editTextPassword.length())
     }
 }
