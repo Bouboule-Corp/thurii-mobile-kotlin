@@ -37,11 +37,17 @@ class RegisterEmailActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable) {}
 
             override fun beforeTextChanged(
-                s: CharSequence, start: Int, count: Int, after: Int
+                s: CharSequence,
+                start: Int,
+                count: Int,
+                after: Int
             ) {}
 
             override fun onTextChanged(
-                p0: CharSequence?, p1: Int, p2: Int, p3: Int
+                p0: CharSequence?,
+                p1: Int,
+                p2: Int,
+                p3: Int
             ) {
                 continue_btn.setBackgroundColor(
                     ContextCompat.getColor(
@@ -58,11 +64,17 @@ class RegisterEmailActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable) {}
 
             override fun beforeTextChanged(
-                s: CharSequence, start: Int, count: Int, after: Int
+                s: CharSequence,
+                start: Int,
+                count: Int,
+                after: Int
             ) {}
 
             override fun onTextChanged(
-                p0: CharSequence?, p1: Int, p2: Int, p3: Int
+                p0: CharSequence?,
+                p1: Int,
+                p2: Int,
+                p3: Int
             ) {
                 checked.visibility = View.VISIBLE
             }
