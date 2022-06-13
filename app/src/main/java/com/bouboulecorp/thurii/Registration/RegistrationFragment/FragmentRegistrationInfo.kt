@@ -33,6 +33,8 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
     ): View? {
         val lay = super.onCreateView(inflater, container, savedInstanceState)
         initial_spinners(lay!!)
+        val continue_btn = getActivity()?.findViewById<Button>(R.id.continueBtn)
+        continue_btn?.visibility = View.VISIBLE
         return lay
     }
 
