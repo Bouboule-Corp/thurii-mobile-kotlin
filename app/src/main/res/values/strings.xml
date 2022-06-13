@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Thurii</string>
+    <string name="app_name" translatable="false">Thurii</string>
 
     <!-- Common string -->
     <string name="btn_continue">Continuer</string>
@@ -14,7 +14,7 @@
     <string name="email">E-mail</string>
 
     <!-- Registration -->
-    <string name="back">Back Button</string>
+    <string name="back">Bouton Retour</string>
 
     <!-- registration gender -->
     <string name="register_gender_title">À laquelle des options suivantes vous identifiez-vous le plus ?</string>
@@ -30,7 +30,7 @@
     <string name="size">Taille</string>
 
     <!-- registration sport -->
-    <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties?</string>
+    <string name="register_sport_title">Quels sont les activités outdoors que vous pratiquez lors de vos sorties ?</string>
     <string name="register_sport_des">Classez vos pratiques par ordre de préférence.</string>
     <string name="rando">Randonée</string>
     <string name="escalade">Escalade</string>
@@ -40,8 +40,8 @@
     <string name="register_way_title">Vous y êtes presque</string>
     <string name="register_way_des">Créez un compte pour accéder aux autres profils, à la création d\'itiniraire, à votre programme d\'entaînement et au suivi de vos sessions.</string>
     <string name="register_google">S\'inscrire avec Google</string>
-    <string name="register_email">Continue avec un email</string>
-    <string name="condition_politic">En continuant, j\'accepte les  <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation</a> et la  <a href="https://youtu.be/dQw4w9WgXcQ">Politique de confidentialité</a> de Thurii.</string>
+    <string name="register_email">Continuer avec un e-mail</string>
+    <string name="condition_politic">En continuant, j\'accepte les conditions <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation</a>et la  <a href="https://youtu.be/dQw4w9WgXcQ">Politique de confidentialité</a>de Thurii.</string>
     <string name="no_share_info">Rien n\'est partagé sans votre autorisation.</string>
 
     <!-- settings page -->

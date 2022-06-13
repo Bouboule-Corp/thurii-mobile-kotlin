@@ -16,4 +16,16 @@ class SettingsTest {
         ActivityScenario.launch(SettingsActivity::class.java)
         Espresso.onView(ViewMatchers.withId(R.id.log_in_button))
     }
+
+    @Test
+    fun test_isButtonFrench() {
+        ActivityScenario.launch(SettingsActivity::class.java)
+        Espresso.onView(ViewMatchers.withId(R.id.btnFrench))
+    }
+
+    @Test
+    fun test_isButtonEnglish() {
+        ActivityScenario.launch(SettingsActivity::class.java)
+        Espresso.onView(ViewMatchers.withId(R.id.btnEnglish))
+    }
 }
