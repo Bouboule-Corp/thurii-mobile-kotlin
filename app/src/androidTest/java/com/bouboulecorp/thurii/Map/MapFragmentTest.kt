@@ -4,6 +4,8 @@ import android.view.View
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers.withClassName
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.MapFragment
 import com.bouboulecorp.thurii.R
