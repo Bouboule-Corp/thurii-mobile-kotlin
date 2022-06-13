@@ -1,11 +1,14 @@
 package com.bouboulecorp.thurii
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.SessionFragment
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.HomeFragment
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.ProfileFragment
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.MapFragment
+import com.bouboulecorp.thurii.Settings.SettingsActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -36,5 +39,10 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.replace(R.id.Fragment_layout, fragment)
         transaction.commit()
+    }
+
+    fun goToSettings(view: View) {
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
     }
 }
