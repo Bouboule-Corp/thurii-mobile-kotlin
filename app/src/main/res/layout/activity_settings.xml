@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage.HomePageFragments.ProfileFragment"
-    android:background="@color/custom_color_background">
+    android:background="@color/custom_color_background"
+    tools:context=".Settings.SettingsActivity">
 
-
-    <ImageButton
-        android:id="@+id/icon_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?android:selectableItemBackground"
-        android:onClick="goToSettings"
-        android:src="@drawable/icon_menu"
+    <Button
+        android:id="@+id/log_in_button"
+        style="@style/ButtonGreenStyle"
+        android:onClick="goToLogInSignInPage"
+        android:text="@string/log_out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,9 +1,10 @@
 package com.bouboulecorp.thurii.HomePage.HomePageFragments
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -56,5 +57,17 @@ class ProfileFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    fun goToSettings2(v: View) {
+        when (v.id) {
+            R.id.icon_menu_button -> {
+                val myIntent = Intent()
+                myIntent.setClassName("com.bouboulecorp.thurii", "com.bouboulecorp.thurii.Settings.SettingsActivity")
+                // for ex: your package name can be "com.example"
+                // your activity name will be "com.example.Contact_Developer"
+                startActivity(myIntent)
+            }
+        }
     }
 }

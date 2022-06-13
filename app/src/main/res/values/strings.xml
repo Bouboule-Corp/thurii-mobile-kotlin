@@ -44,6 +44,9 @@
     <string name="condition_politic">En continuant, j\'accepte les  <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation</a> et la  <a href="https://youtu.be/dQw4w9WgXcQ">Politique de confidentialité</a> de Thurii.</string>
     <string name="no_share_info">Rien n\'est partagé sans votre autorisation.</string>
 
+    <!-- settings page -->
+    <string name="log_out">Déconnexion</string>
+
     <string-array name="weights">
         <item>choose</item>
         <item>40 kg</item>
