@@ -17,7 +17,7 @@
     <string name="back">Back Button</string>
 
     <!-- registration gender -->
-    <string name="register_gender_title">À laquelle de options suivantes vous identifiez-vous le plus?</string>
+    <string name="register_gender_title">À laquelle des options suivantes vous identifiez-vous le plus ?</string>
     <string name="register_first_des">Thurii utilise cette information pour concevoir vos programmes d’entraînement lors de vos sorties.</string>
     <string name="female">Femme</string>
     <string name="male">Homme</string>
@@ -455,4 +455,5 @@
     <string name="double_auth_title">Double authentification</string>
     <string name="numero">Mon numéro</string>
     <string name="double_auth_des">Appuie sur Continuer pour recevoir un message de la part de Tinder avec un code de vérification. Des frais liés à l’envoi de messages et/ou d’utilisation de données peuvent s’appliquer. Le numéro de téléphone vérifié pourra être utilisé pour te connecter. Découvre ce qui se passe si tu changes de numéro de téléphone.</string>
+
 </resources>
