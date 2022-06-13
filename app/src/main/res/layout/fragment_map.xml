@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage.HomePageFragments.MapFragment"
-    android:background="@color/custom_color_background">
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/white"
-        android:text="Map fragment" />
-
-</FrameLayout>
+        mapbox:mapbox_locationComponentEnabled="true"
+        android:layout_marginBottom="55dp"
+        mapbox:mapbox_cameraTargetLat="45.75"
+        mapbox:mapbox_cameraTargetLng="4.85"
+        mapbox:mapbox_cameraZoom="5.0"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
