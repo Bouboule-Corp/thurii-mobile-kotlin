@@ -4,7 +4,6 @@ import android.view.View
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.bouboulecorp.thurii.HomePage.HomePageFragments.MapFragment
 import com.bouboulecorp.thurii.R
@@ -13,7 +12,6 @@ import org.hamcrest.CoreMatchers.containsString
 import org.hamcrest.Matcher
 import org.junit.Test
 import org.junit.runner.RunWith
-
 
 @RunWith(AndroidJUnit4ClassRunner::class)
 
