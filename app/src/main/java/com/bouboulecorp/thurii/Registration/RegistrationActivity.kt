@@ -9,7 +9,6 @@ import com.bouboulecorp.thurii.LogInSignInMenu.LogInSignInMenuActivity
 import com.bouboulecorp.thurii.R
 import com.bouboulecorp.thurii.databinding.ActivityRegistrationBinding
 
-
 class RegistrationActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityRegistrationBinding
@@ -46,8 +45,7 @@ class RegistrationActivity : AppCompatActivity() {
             if (progress.progress == 25) {
                 val intent = Intent(this, LogInSignInMenuActivity::class.java)
                 startActivity(intent)
-            }
-            else if (progress.progress == 50) {
+            } else if (progress.progress == 50) {
                 replaceFragment(FragmentRegistrationGender())
                 progress.setProgress(25)
             } else if (progress.progress == 75) {
