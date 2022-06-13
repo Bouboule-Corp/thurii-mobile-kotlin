@@ -1,11 +1,9 @@
 package com.bouboulecorp.thurii
-
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.preference.PreferenceManager
 import java.util.*
-
 
 object LocaleHelper {
     private const val SELECTED_LANGUAGE = "Locale.Helper.Selected.Language"
