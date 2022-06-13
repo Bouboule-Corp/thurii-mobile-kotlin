@@ -1,2 +1,3 @@
 comment: false
-patch: off
+github_checks:
+    annotations: false
