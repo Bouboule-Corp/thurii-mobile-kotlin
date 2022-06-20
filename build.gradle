@@ -17,20 +17,11 @@ allprojects {
                 basic(BasicAuthentication)
             }
             credentials {
-                def key
-                if (rootProject.file("local.properties").exists()) {
-                    def localProperties = new Properties()
-                    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
-                    key = localProperties.getProperty("mapbox.dl.token")
-                }
-                else {
-                    key = "$System.env.MAPBOX_KEY"
-                }
                 // Do not change the username below.
                 // This should always be `mapbox` (not your username).
                 username = 'mapbox'
                 // Use the secret token you stored in gradle.properties as the password
-                password = key
+                password = "$System.env.MAPBOX_KEY"
             }
         }
     }
