@@ -50,10 +50,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     debugImplementation "androidx.fragment:fragment-testing:1.4.1"
     // Mapbox
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.7.0'
-    implementation ('com.mapbox.maps:android:10.1.0', {
-        exclude group: 'com.mapbox.mapboxsdk', module:'mapbox-android-telemetry'
-    })
+    implementation 'com.mapbox.maps:android:10.6.0'
 }
 
 tasks.withType(Test) {
