@@ -13,6 +13,9 @@ To use this project, you first need to clone this repositository.
 For development, the latest version of **Android Studio** is required. The latest version can be downloaded from [here](https://developer.android.com/studio/).   
 Then open this project in Android Studio.
 
+## Environment
+If you want to be able to build the project you have to create an environement variable called MAPBOX_KEY as for the value of the key you have to ask one of the contributors check your systems doc on how to create environment variable if you don't know.
+
 ## Getting started
 
 ### With your android phone (recommended)
