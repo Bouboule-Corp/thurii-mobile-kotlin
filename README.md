@@ -17,7 +17,7 @@ Then open this project in Android Studio.
 If you want to be able to build the project you have to create an environement variable called MAPBOX_KEY as for the value of the key you have to ask one of the contributors.
 
 #### Linux
-  - for a temporary env variable type export MAPBOX_KEY=key (you will have to do it each time you launch a terminal).
+  - for a temporary env variable type (you will have to do it each time you launch a terminal) : `export MAPBOX_KEY=key`
   - for a permanent env variable :
   1. To set permanent environment edit the .bashrc file:
 
