@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import com.bouboulecorp.thurii.R
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
-import com.mapbox.mapboxsdk.Mapbox
 
 class MapFragment : Fragment() {
 
@@ -18,10 +17,8 @@ class MapFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Mapbox.getInstance(requireActivity(), getString(R.string.mapbox_access_token))
-
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_map, container, false)
+        val view = inflater.inflate(R.layout.fragment_map, container, false)
 
         mapView = view.findViewById(R.id.mapView)
         mapView?.getMapboxMap()?.loadStyleUri(Style.MAPBOX_STREETS)
