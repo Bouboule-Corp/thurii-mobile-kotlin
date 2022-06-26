@@ -35,14 +35,16 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
 
         continue_btn?.setBackgroundColor(
             ContextCompat.getColor(
-                requireActivity(), R.color.custom_color_slider_widget_unselected
+                requireActivity(),
+                R.color.custom_color_slider_widget_unselected
             )
         )
 
         btn_female.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_primary_
+                    requireActivity(),
+                    R.color.custom_color_primary_
                 )
             )
             btn_female.setAlpha(1.0f)
@@ -52,7 +54,8 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
         btn_male.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_primary_
+                    requireActivity(),
+                    R.color.custom_color_primary_
                 )
             )
             btn_male.setAlpha(1.0f)
