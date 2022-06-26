@@ -29,7 +29,8 @@ class RegistrationActivity : AppCompatActivity() {
         if (fragment !is FragmentRegistrationGender) {
             supportFragmentManager.beginTransaction()
                 .add(
-                    R.id.fragmentContainer, homeFragment,
+                    R.id.fragmentContainer,
+                    homeFragment,
                     FragmentRegistrationGender::class.java.simpleName
                 )
                 .commit()
