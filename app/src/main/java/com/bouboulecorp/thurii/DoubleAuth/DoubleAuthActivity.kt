@@ -1,5 +1,4 @@
 package com.bouboulecorp.thurii.DoubleAuth
-
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
