@@ -54,7 +54,8 @@ class DoubleAuthActivity : AppCompatActivity() {
             ) {
                 continue_btn.setBackgroundColor(
                     ContextCompat.getColor(
-                        applicationContext, R.color.custom_color_primary_
+                        applicationContext,
+                        R.color.custom_color_primary_
                     )
                 )
             }
