@@ -131,7 +131,8 @@ class FragmentRegistrationInfo : Fragment(R.layout.registration_info) {
                     ).show()
                     continue_btn?.setBackgroundColor(
                         ContextCompat.getColor(
-                            requireActivity(), R.color.custom_color_primary_
+                            requireActivity(),
+                            R.color.custom_color_primary_
                         )
                     )
                 }
