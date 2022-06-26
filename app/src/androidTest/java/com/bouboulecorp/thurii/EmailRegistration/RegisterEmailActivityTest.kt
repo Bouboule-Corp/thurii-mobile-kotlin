@@ -64,6 +64,7 @@ class RegisterEmailActivityTest {
         onView(withId(R.id.et_nom))
             .check(matches(isDisplayed()))
     }
+    
     @Test
     fun test_isEmaiclDisplayed() {
         ActivityScenario.launch(RegisterEmailActivity::class.java)
