@@ -1,5 +1,4 @@
 package com.bouboulecorp.thurii.RegistrationTests
-
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
