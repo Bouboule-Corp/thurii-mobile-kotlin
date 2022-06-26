@@ -56,14 +56,16 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         )
         continue_btn?.setBackgroundColor(
             ContextCompat.getColor(
-                requireActivity(), R.color.custom_color_slider_widget_unselected
+                requireActivity(),
+                R.color.custom_color_slider_widget_unselected
             )
         )
 
         btn_rando.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_primary_
+                    requireActivity(),
+                    R.color.custom_color_primary_
                 )
             )
             btn_rando.setAlpha(1.0f)
@@ -78,7 +80,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         btn_escalade.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_primary_
+                    requireActivity(),
+                    R.color.custom_color_primary_
                 )
             )
             btn_escalade.setAlpha(1.0f)
@@ -93,7 +96,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         btn_snow.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_primary_
+                    requireActivity(),
+                    R.color.custom_color_primary_
                 )
             )
             btn_snow.setAlpha(1.0f)
@@ -116,7 +120,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
-                        requireActivity(), R.color.custom_color_slider_widget_unselected
+                        requireActivity(),
+                        R.color.custom_color_slider_widget_unselected
                     )
                 )
             }
@@ -132,7 +137,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             sport_list.remove(txtV_list[1].text)
             if (sport_list.size == 0) continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
-                    requireActivity(), R.color.custom_color_slider_widget_unselected
+                    requireActivity(),
+                    R.color.custom_color_slider_widget_unselected
                 )
             )
             txtV_list[1].setText("")
@@ -148,7 +154,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             if (sport_list.size == 0)
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
-                        requireActivity(), R.color.custom_color_slider_widget_unselected
+                        requireActivity(),
+                        R.color.custom_color_slider_widget_unselected
                     )
                 )
             txtV_list[2].setText("")
