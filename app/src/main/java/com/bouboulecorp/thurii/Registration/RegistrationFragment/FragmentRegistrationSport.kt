@@ -135,8 +135,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             } else if (txtV_list[1].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
             } else {
-                btn_snow.setAlpha(0.4f) 
-              }
+                btn_snow.setAlpha(0.4f)
+            }
             sport_list.remove(txtV_list[1].text)
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
