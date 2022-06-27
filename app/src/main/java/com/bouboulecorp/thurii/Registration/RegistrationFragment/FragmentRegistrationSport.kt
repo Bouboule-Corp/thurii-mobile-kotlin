@@ -162,8 +162,8 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                         R.color.custom_color_slider_widget_unselected
                     )
                 )
-            txtV_list[2].setText("")
-           }
+                txtV_list[2].setText("")
+            }
         }
         return lay
     }
