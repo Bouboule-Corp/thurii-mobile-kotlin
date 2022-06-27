@@ -116,7 +116,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             else if (txtV_list[0].text == "Escalade")
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
-            sport_list.remove(txtV_list[0].text)
+                sport_list.remove(txtV_list[0].text)
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
@@ -150,7 +150,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
             else if (txtV_list[2].text == "Escalade")
                 btn_escalade.setAlpha(0.4f)
             else btn_snow.setAlpha(0.4f)
-            sport_list.remove(txtV_list[2].text)
+                sport_list.remove(txtV_list[2].text)
             if (sport_list.size == 0)
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
