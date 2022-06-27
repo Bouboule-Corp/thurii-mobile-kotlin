@@ -64,24 +64,28 @@ class RegisterEmailActivityTest {
         onView(withId(R.id.et_nom))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun test_isEmaiclDisplayed() {
         ActivityScenario.launch(RegisterEmailActivity::class.java)
         onView(withId(R.id.et_email))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun test_isPswDisplayed() {
         ActivityScenario.launch(RegisterEmailActivity::class.java)
         onView(withId(R.id.et_password))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun test_isContinueBtnEmailDisplayed() {
         ActivityScenario.launch(RegisterEmailActivity::class.java)
         onView(withId(R.id.continueBtnEmail))
             .check(matches(withText(R.string.btn_continue)))
     }
+
     @Test
     fun test_isConditionPoResCorrect() {
         ActivityScenario.launch(DoubleAuthActivity::class.java)
