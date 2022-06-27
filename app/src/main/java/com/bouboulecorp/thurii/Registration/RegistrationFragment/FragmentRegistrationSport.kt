@@ -115,9 +115,10 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_rando.setAlpha(0.4f)
             } else if (txtV_list[0].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            } else btn_snow.setAlpha(0.4f) {
-                sport_list.remove(txtV_list[0].text)
+            } else {
+                btn_snow.setAlpha(0.4f)
             }
+            sport_list.remove(txtV_list[0].text)
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
@@ -133,9 +134,10 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_rando.setAlpha(0.4f)
             } else if (txtV_list[1].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            } else btn_snow.setAlpha(0.4f) {
-                sport_list.remove(txtV_list[1].text)
-            }
+            } else {
+                btn_snow.setAlpha(0.4f) 
+              }
+            sport_list.remove(txtV_list[1].text)
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
@@ -152,9 +154,10 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                 btn_rando.setAlpha(0.4f)
             } else if (txtV_list[2].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            } else btn_snow.setAlpha(0.4f) {
-                sport_list.remove(txtV_list[2].text)
+            } else {
+                btn_snow.setAlpha(0.4f)
             }
+            sport_list.remove(txtV_list[2].text)
             if (sport_list.size == 0) {
                 continue_btn?.setBackgroundColor(
                     ContextCompat.getColor(
