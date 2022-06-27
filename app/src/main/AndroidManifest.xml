@@ -10,7 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thurii">
         <activity
+            android:name=".Settings.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bouboulecorp.thurii.EmailRegistration.RegisterEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bouboulecorp.thurii.DoubleAuth.DoubleAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registration.RegistrationFragment.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInSignInMenu.LogInSignInMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

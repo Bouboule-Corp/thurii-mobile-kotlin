@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_continue">Continue</string>
+    <string name="log_in_button">Sign In</string>
+    <string name="sign_in_button">I have already an account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="back">Back Button</string>
+    <string name="female">Woman</string>
+    <string name="male">Man</string>
+    <string name="birthday">Birth date</string>
+    <string name="size">Size</string>
+    <string name="prenom">First name</string>
+    <string name="nom">Name</string>
+    <string name="numero">My number</string>
+    <string name="log_out">Log out</string>
+    <string name="double_auth_des">Press Continue to receive a message from Tinder with a verification code. Fees for messaging and/or data usage may apply. The verified phone number can be used to connect you. Find out what happens if you change your phone number.</string>
+    <string name="double_auth_title">Double authentication</string>
+    <string name="pseudo">Username</string>
+    <string name="no_share_info">Nothing is shared without your permission.</string>
+    <string name="condition_politic">By continuing, I agree to the  <a href="https://youtu.be/dQw4w9WgXcQ">Conditions d\'utilisation</a>and the   <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy </a>of Thurii.</string>
+    <string name="register_email">Continue with an e-mail</string>
+    <string name="register_google">Sign up with Google</string>
+    <string name="register_way_des">Create an account to access other profiles, create itineraries, access your training programme and track your sessions.</string>
+    <string name="register_way_title">You are almost there</string>
+    <string name="snow">Ski/Snow</string>
+    <string name="escalade">Climbing</string>
+    <string name="rando">Hiking</string>
+    <string name="register_sport_des">Rank your practices in order of preference.</string>
+    <string name="register_sport_title">What outdoor activities do you do on your outings ?</string>
+    <string name="weight">Weight</string>
+    <string name="register_info_des">This information allows us to provide you with relevant and personalised data and training and to adapt your outings to your level.</string>
+    <string name="register_info_title">Provide your coach with some final information</string>
+    <string name="register_first_des">Thurii uses this information to design your training programs for your rides.</string>
+    <string name="register_gender_title">Which of the following options do you identify with most ?</string>
+    <string name="link">By continuing, you agree to our <a href="https://youtu.be/dQw4w9WgXcQ"> Terms of Use</a>and <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a></string>
+</resources>
