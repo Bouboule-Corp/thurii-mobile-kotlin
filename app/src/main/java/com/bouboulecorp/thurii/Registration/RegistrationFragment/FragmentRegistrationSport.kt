@@ -113,11 +113,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         del_first.setOnClickListener {
             if (txtV_list[0].text == "Randonnée") {
                 btn_rando.setAlpha(0.4f)
-            }
-            else if (txtV_list[0].text == "Escalade") {
+            } else if (txtV_list[0].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            }
-            else btn_snow.setAlpha(0.4f) {
+            } else btn_snow.setAlpha(0.4f) {
                 sport_list.remove(txtV_list[0].text)
             }
             if (sport_list.size == 0) {
@@ -133,11 +131,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         del_second.setOnClickListener {
             if (txtV_list[1].text == "Randonnée") {
                 btn_rando.setAlpha(0.4f)
-            }
-            else if (txtV_list[1].text == "Escalade") {
+            } else if (txtV_list[1].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            }
-            else btn_snow.setAlpha(0.4f) {
+            } else btn_snow.setAlpha(0.4f) {
                 sport_list.remove(txtV_list[1].text)
             }
             if (sport_list.size == 0) {
@@ -154,11 +150,9 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
         del_third.setOnClickListener {
             if (txtV_list[2].text == "Randonnée") {
                 btn_rando.setAlpha(0.4f)
-            }
-            else if (txtV_list[2].text == "Escalade") {
+            } else if (txtV_list[2].text == "Escalade") {
                 btn_escalade.setAlpha(0.4f)
-            }
-            else btn_snow.setAlpha(0.4f) {
+            } else btn_snow.setAlpha(0.4f) {
                 sport_list.remove(txtV_list[2].text)
             }
             if (sport_list.size == 0) {
@@ -169,7 +163,7 @@ class FragmentRegistrationSport : Fragment(R.layout.registration_sport) {
                     )
                 )
             txtV_list[2].setText("")
-            }
+           }
         }
         return lay
     }
