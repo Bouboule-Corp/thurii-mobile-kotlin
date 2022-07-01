@@ -26,10 +26,10 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
         val continue_btn = getActivity()?.findViewById<Button>(
             R.id.continueBtn
         )
-        val btn_female = lay!!.findViewById<ImageButton>(
+        val btn_female = lay?.findViewById<ImageButton>(
             R.id.btn_female
         )
-        val btn_male = lay!!.findViewById<ImageButton>(
+        val btn_male = lay?.findViewById<ImageButton>(
             R.id.btn_male
         )
 
@@ -40,7 +40,7 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
             )
         )
 
-        btn_female.setOnClickListener {
+        btn_female?.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
                     requireActivity(),
@@ -48,10 +48,10 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
                 )
             )
             btn_female.setAlpha(1.0f)
-            btn_male.setAlpha(0.4f)
+            btn_male?.setAlpha(0.4f)
         }
 
-        btn_male.setOnClickListener {
+        btn_male?.setOnClickListener {
             continue_btn?.setBackgroundColor(
                 ContextCompat.getColor(
                     requireActivity(),
@@ -59,7 +59,7 @@ class FragmentRegistrationGender : Fragment(R.layout.registration_gender) {
                 )
             )
             btn_male.setAlpha(1.0f)
-            btn_female.setAlpha(0.4f)
+            btn_female?.setAlpha(0.4f)
         }
 
         return lay

@@ -4,6 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17985611510791366" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/ic_femme.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/icon_home.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/icon_home_selected.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/icon_map_selector.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/icon_thurii_background.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/register_down_border.xml" value="0.155" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/drawable/spinner_bg.xml" value="0.138" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/activity_registration.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/register_double_auth.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_email.xml" value="0.1094224924012158" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_info.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_sport.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/clara/thurii-mobile-kotlin/app/src/main/res/layout/registration_way.xml" value="0.1125" />
         <entry key="app/src/main/res/drawable/icon_eye_close_line.xml" value="0.176" />
         <entry key="app/src/main/res/drawable/icon_home_selected.xml" value="0.269" />
         <entry key="app/src/main/res/drawable/icon_home_selector.xml" value="0.268" />

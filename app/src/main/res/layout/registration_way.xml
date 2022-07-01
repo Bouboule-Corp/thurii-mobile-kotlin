@@ -53,7 +53,7 @@
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:text="@string/register_google"
-        android:drawableLeft="@drawable/google"
+        android:drawableLeft="@drawable/ic_google"
         android:layout_marginBottom="17dp"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
