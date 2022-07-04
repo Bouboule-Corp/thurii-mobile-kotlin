@@ -25,6 +25,9 @@
             android:name="com.bouboulecorp.thurii.DoubleAuth.DoubleAuthActivity"
             android:exported="false" />
         <activity
+            android:name="com.bouboulecorp.thurii.DoubleAuth.TelCheckCodeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Registration.RegistrationFragment.RegistrationActivity"
             android:exported="false" />
         <activity

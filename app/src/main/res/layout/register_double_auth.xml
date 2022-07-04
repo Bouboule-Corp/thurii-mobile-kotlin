@@ -100,6 +100,7 @@
 
     <Button
         android:id="@+id/continueBtnDoubleAuth"
+        android:onClick="goToCodeVerify"
         style="@style/ButtonGreyStyle"
         android:layout_marginTop="80dp"
         android:text="@string/btn_continue"
