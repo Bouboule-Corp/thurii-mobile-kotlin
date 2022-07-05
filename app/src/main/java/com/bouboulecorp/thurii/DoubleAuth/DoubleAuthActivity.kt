@@ -1,4 +1,5 @@
 package com.bouboulecorp.thurii.DoubleAuth
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -31,6 +32,12 @@ class DoubleAuthActivity : AppCompatActivity() {
 
     fun goToRegisterMail(view: View) {
         super.onBackPressed()
+    }
+
+    fun goToCodeVerify(view: View) {
+        val intent = Intent(this, TelCheckCodeActivity::class.java)
+        Toast.makeText(this, "Wow", Toast.LENGTH_LONG).show()
+        startActivity(intent)
     }
 
     fun continueBtnActive() {
