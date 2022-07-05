@@ -21,7 +21,7 @@
         />
 
     <TextView
-        android:id="@+id/double_title"
+        android:id="@+id/title_my_code"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/my_code"
@@ -42,7 +42,7 @@
         android:textSize="34sp"
         android:layout_marginStart="19dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/double_title" />
+        app:layout_constraintTop_toBottomOf="@+id/title_my_code" />
 
     <LinearLayout
         android:id="@+id/code_layout"
@@ -159,12 +159,12 @@
         android:text="@string/resend"
         android:textColor="@color/white"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/continueBtnDoubleAuth"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtnTelAuth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/continueBtnDoubleAuth"
+        android:id="@+id/continueBtnTelAuth"
         style="@style/ButtonGreyStyle"
         android:text="@string/btn_continue"
         android:textColor="@color/white"
