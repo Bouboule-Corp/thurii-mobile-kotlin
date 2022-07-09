@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_camping"
+        android:id="@+id/imageButtonItem"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/button_to_filter_on_the_map"
+        android:layout_marginStart="15dp"
+        android:scaleType="fitCenter"
+        />
+</LinearLayout>

@@ -459,4 +459,11 @@
     <string name="numero">Mon numéro</string>
     <string name="double_auth_des">Appuie sur Continuer pour recevoir un message de la part de Tinder avec un code de vérification. Des frais liés à l’envoi de messages et/ou d’utilisation de données peuvent s’appliquer. Le numéro de téléphone vérifié pourra être utilisé pour te connecter. Découvre ce qui se passe si tu changes de numéro de téléphone.</string>
 
+    <!--    tel check-->
+    <string name="my_code">Mon code</string>
+    <string name="resend">Renvoyer</string>
+
+    <!--    map-->
+    <string name="button_to_filter_on_the_map">bouton à filter sur la map</string>
+
 </resources>

@@ -17,5 +17,16 @@
         mapbox:mapbox_cameraTargetLat="45.75"
         mapbox:mapbox_cameraTargetLng="4.85"
         mapbox:mapbox_cameraZoom="5.0"
-        />
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_caroussel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        mapbox:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        mapbox:layout_constraintBottom_toBottomOf="@+id/mapView"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

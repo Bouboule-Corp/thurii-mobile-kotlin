@@ -34,4 +34,8 @@
     <string name="register_first_des">Thurii uses this information to design your training programs for your rides.</string>
     <string name="register_gender_title">Which of the following options do you identify with most ?</string>
     <string name="link">By continuing, you agree to our <a href="https://youtu.be/dQw4w9WgXcQ"> Terms of Use</a>and <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a></string>
+    <string name="my_code">My code</string>
+    <string name="resend">Resend</string>
+    <string name="button_to_filter_on_the_map">button to filter on the map</string>
+
 </resources>
