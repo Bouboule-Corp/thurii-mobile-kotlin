@@ -37,4 +37,5 @@ jobs:
           script: ./gradlew testDebugUnitTest
       - uses: codecov/codecov-action@v3
         with:
-          token: ${{ secrets.CODECOV_KEY }} 
+          token: ${{ secrets.CODECOV_KEY }}
+          files: "app/build/reports/coverage/debug/report.xml"
