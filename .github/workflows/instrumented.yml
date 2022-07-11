@@ -34,7 +34,7 @@ jobs:
         with:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
-          script: ./gradlew jacocoTestReport
+          script: ./gradlew connectedDebugAndroidTest
       - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_KEY }}
