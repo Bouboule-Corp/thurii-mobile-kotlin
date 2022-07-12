@@ -26,12 +26,12 @@ class SettingsActivity : AppCompatActivity() {
         if (spinner != null) {
             val adapter = ArrayAdapter(
                 this,
-                android.R.layout.simple_spinner_item, 
+                android.R.layout.simple_spinner_item,
                 theme
             )
             spinner.adapter = adapter
 
-            val sharedPreference = getSharedPreferences("USER_VARIABLES",Context.MODE_PRIVATE)
+            val sharedPreference = getSharedPreferences("USER_VARIABLES", Context.MODE_PRIVATE)
             when (sharedPreference.getString("mapbox_style", "mapbox://styles/mapbox/outdoors-v11")) {
                 "mapbox://styles/mapbox/dark-v10" -> spinner.setSelection(1) // dark theme
                 "mapbox://styles/mapbox/satellite-streets-v11" -> spinner.setSelection(2) // satellite theme
@@ -42,11 +42,16 @@ class SettingsActivity : AppCompatActivity() {
 
             spinner.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(parent: AdapterView<*>,
-                                            view: View, position: Int, id: Long) {
-                    Toast.makeText(this@SettingsActivity,
+                override fun onItemSelected(
+                                        parent: AdapterView<*>,
+                                        view: View, position: Int, id: Long
+                                        ) {
+                    Toast.makeText(
+                        this@SettingsActivity,
                         getString(R.string.selected_item) + " " +
-                                "" + theme[position], Toast.LENGTH_SHORT).show()
+                        "" + theme[position],
+                        Toast.LENGTH_SHORT
+                    ).show()
 
                     val editor = sharedPreference.edit()
 
