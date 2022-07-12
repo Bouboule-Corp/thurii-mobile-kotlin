@@ -1,12 +1,14 @@
 package com.bouboulecorp.thurii.HomePage.HomePageFragments
+import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.bouboulecorp.thurii.R
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
+
 
 class MapFragment : Fragment() {
 
@@ -20,8 +22,14 @@ class MapFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_map, container, false)
 
+        val preferences = this.activity!!
+            .getSharedPreferences("USER_VARIABLES", Context.MODE_PRIVATE)
+        val mapboxStyle = preferences.getString("mapbox_style", "mapbox://styles/mapbox/outdoors-v11")
+
         mapView = view.findViewById(R.id.mapView)
-        mapView?.getMapboxMap()?.loadStyleUri(Style.MAPBOX_STREETS)
+        if (mapboxStyle != null) {
+            mapView?.getMapboxMap()?.loadStyleUri(mapboxStyle)
+        }
         return view
     }
 }

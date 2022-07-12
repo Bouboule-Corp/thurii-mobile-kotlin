@@ -47,6 +47,12 @@
     <!-- settings page -->
     <string name="log_out">Déconnexion</string>
 
+    <string-array name="theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Satellite</item>
+    </string-array>
+
     <string-array name="weights">
         <item>choose</item>
         <item>40 kg</item>
@@ -458,5 +464,6 @@
     <string name="double_auth_title">Double authentification</string>
     <string name="numero">Mon numéro</string>
     <string name="double_auth_des">Appuie sur Continuer pour recevoir un message de la part de Tinder avec un code de vérification. Des frais liés à l’envoi de messages et/ou d’utilisation de données peuvent s’appliquer. Le numéro de téléphone vérifié pourra être utilisé pour te connecter. Découvre ce qui se passe si tu changes de numéro de téléphone.</string>
+    <string name="selected_item">Item sélectionné :</string>
 
 </resources>
