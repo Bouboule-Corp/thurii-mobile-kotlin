@@ -8,6 +8,16 @@
     tools:context=".Settings.SettingsActivity">
 
     <Button
+        android:id="@+id/btn_change_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Change theme"
+        app:layout_constraintBottom_toTopOf="@+id/log_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/log_in_button"
         style="@style/ButtonGreenStyle"
         android:onClick="goToLogInSignInPage"
