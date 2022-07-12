@@ -9,7 +9,6 @@ import com.bouboulecorp.thurii.R
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
 
-
 class MapFragment : Fragment() {
 
     private var mapView: MapView? = null
