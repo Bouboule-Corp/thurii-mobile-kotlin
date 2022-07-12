@@ -12,7 +12,6 @@ import com.bouboulecorp.thurii.LogInSignInMenu.LogInSignInMenuActivity
 import com.bouboulecorp.thurii.MainActivity
 import com.bouboulecorp.thurii.R
 
-
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
