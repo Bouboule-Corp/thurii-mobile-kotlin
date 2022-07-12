@@ -44,14 +44,15 @@ class SettingsActivity : AppCompatActivity() {
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
                     parent: AdapterView<*>,
-                    view: View, position: Int, 
+                    view: View,
+                    position: Int,
                     id: Long
                 ) {
                     Toast.makeText(
-                            this@SettingsActivity,
-                            getString(R.string.selected_item) + " " +
-                            "" + theme[position],
-                            Toast.LENGTH_SHORT
+                        this@SettingsActivity,
+                        getString(R.string.selected_item) + " " +
+                        "" + theme[position],
+                        Toast.LENGTH_SHORT
                     ).show()
 
                     val editor = sharedPreference.edit()
