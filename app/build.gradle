@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'jacoco' apply(true)
 }
 
 android {
@@ -18,12 +19,15 @@ android {
         enabled = true
     }
     buildTypes {
+        debug {
+            testCoverageEnabled = true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
+        compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -48,7 +52,7 @@ dependencies {
 
 //    Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    debugImplementation "androidx.fragment:fragment-testing:1.4.1"
+    debugImplementation "androidx.fragment:fragment-testing:1.5.0"
     // Mapbox
     implementation 'com.mapbox.maps:android:10.6.0'
 }
