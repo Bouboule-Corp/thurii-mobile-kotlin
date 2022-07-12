@@ -24,13 +24,16 @@ class SettingsActivity : AppCompatActivity() {
         // access the spinner
         val spinner = findViewById<Spinner>(R.id.spinner)
         if (spinner != null) {
-            val adapter = ArrayAdapter(this,
-                android.R.layout.simple_spinner_item, theme)
+            val adapter = ArrayAdapter(
+                this,
+                android.R.layout.simple_spinner_item, 
+                theme
+            )
             spinner.adapter = adapter
 
-            val sharedPreference =  getSharedPreferences("USER_VARIABLES",Context.MODE_PRIVATE)
-            when (sharedPreference.getString("mapbox_style","mapbox://styles/mapbox/outdoors-v11")) {
-                "mapbox://styles/mapbox/dark-v10" ->  spinner.setSelection(1) // dark theme
+            val sharedPreference = getSharedPreferences("USER_VARIABLES",Context.MODE_PRIVATE)
+            when (sharedPreference.getString("mapbox_style", "mapbox://styles/mapbox/outdoors-v11")) {
+                "mapbox://styles/mapbox/dark-v10" -> spinner.setSelection(1) // dark theme
                 "mapbox://styles/mapbox/satellite-streets-v11" -> spinner.setSelection(2) // satellite theme
                 else -> {
                     spinner.setSelection(0)
