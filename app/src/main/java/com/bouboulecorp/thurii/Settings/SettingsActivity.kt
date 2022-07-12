@@ -30,8 +30,8 @@ class SettingsActivity : AppCompatActivity() {
 
             val sharedPreference =  getSharedPreferences("USER_VARIABLES",Context.MODE_PRIVATE)
             when (sharedPreference.getString("mapbox_style","mapbox://styles/mapbox/outdoors-v11")) {
-                "mapbox://styles/mapbox/dark-v10" ->  spinner.setSelection(1) //dark theme
-                "mapbox://styles/mapbox/satellite-streets-v11" -> spinner.setSelection(2) //satellite theme
+                "mapbox://styles/mapbox/dark-v10" ->  spinner.setSelection(1) // dark theme
+                "mapbox://styles/mapbox/satellite-streets-v11" -> spinner.setSelection(2) // satellite theme
                 else -> {
                     spinner.setSelection(0)
                 }
@@ -49,7 +49,7 @@ class SettingsActivity : AppCompatActivity() {
 
                     when (position) {
                         1 -> editor.putString("mapbox_style","mapbox://styles/mapbox/dark-v10") //dark theme
-                        2 -> editor.putString("mapbox_style","mapbox://styles/mapbox/satellite-streets-v11") //satellite theme
+                        2 -> editor.putString("mapbox_style","mapbox://styles/mapbox/satellite-streets-v11") // satellite theme
                         else -> {
                             editor.putString("mapbox_style","mapbox://styles/mapbox/outdoors-v11")
                         }
