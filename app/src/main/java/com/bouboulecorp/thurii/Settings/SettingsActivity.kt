@@ -51,7 +51,7 @@ class SettingsActivity : AppCompatActivity() {
                     Toast.makeText(
                         this@SettingsActivity,
                         getString(R.string.selected_item) + " " +
-                        "" + theme[position],
+                            "" + theme[position],
                         Toast.LENGTH_SHORT
                     ).show()
 
