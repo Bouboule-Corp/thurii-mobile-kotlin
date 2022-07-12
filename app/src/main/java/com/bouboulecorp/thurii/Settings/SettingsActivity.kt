@@ -43,23 +43,24 @@ class SettingsActivity : AppCompatActivity() {
             spinner.onItemSelectedListener = object :
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
-                                        parent: AdapterView<*>,
-                                        view: View, position: Int, id: Long
-                                        ) {
+                    parent: AdapterView<*>,
+                    view: View, position: Int, 
+                    id: Long
+                ) {
                     Toast.makeText(
-                        this@SettingsActivity,
-                        getString(R.string.selected_item) + " " +
-                        "" + theme[position],
-                        Toast.LENGTH_SHORT
+                            this@SettingsActivity,
+                            getString(R.string.selected_item) + " " +
+                            "" + theme[position],
+                            Toast.LENGTH_SHORT
                     ).show()
 
                     val editor = sharedPreference.edit()
 
                     when (position) {
-                        1 -> editor.putString("mapbox_style","mapbox://styles/mapbox/dark-v10") //dark theme
-                        2 -> editor.putString("mapbox_style","mapbox://styles/mapbox/satellite-streets-v11") // satellite theme
+                        1 -> editor.putString("mapbox_style", "mapbox://styles/mapbox/dark-v10") // dark theme
+                        2 -> editor.putString("mapbox_style", "mapbox://styles/mapbox/satellite-streets-v11") // satellite theme
                         else -> {
-                            editor.putString("mapbox_style","mapbox://styles/mapbox/outdoors-v11")
+                            editor.putString("mapbox_style", "mapbox://styles/mapbox/outdoors-v11")
                         }
                     }
 
