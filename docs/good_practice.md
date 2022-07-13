@@ -28,7 +28,14 @@ to allow everyone to have the same base and to avoid duplication.
 
 </br>
 
-## :interrobang: Explicit error handling with logs
+## :wheelchair: Explicit error handling with logs
+
+### Text size :
+Use sp instead of dp to allow for a text size that takes into account the user's settings
+
+</br>
+
+## :interrobang: Accessibility 
 
 Each error should be accompanied by an explicit log to facilitate maintenance
 
