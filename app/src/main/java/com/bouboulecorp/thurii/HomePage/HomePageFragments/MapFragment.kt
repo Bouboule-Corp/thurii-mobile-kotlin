@@ -110,7 +110,9 @@ class MapFragment : Fragment() {
         filterButtonList.add(map_recyclerview_item("trash", R.drawable.ic_trash))
 
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_caroussel)
-        horizontalRecyclerView.adapter = map_recyclerview_item_adapter(filterButtonList, R.layout.item_on_board, requireContext())
+        horizontalRecyclerView.adapter = map_recyclerview_item_adapter(
+            filterButtonList, R.layout.item_on_board, requireContext()
+        )
         return view
     }
 
@@ -136,9 +138,15 @@ class MapFragment : Fragment() {
 
     private val locationPermissionCode = 2
     private fun startLocationUpdates() {
-        if ((ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
-            ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                locationPermissionCode)
+        if ((ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        ) {
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                locationPermissionCode
+            )
         }
         else {
             val locationRequest = LocationRequest()
