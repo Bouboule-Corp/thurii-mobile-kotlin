@@ -37,7 +37,7 @@
     <string name="snow">Ski/Snow</string>
 
     <!-- registration Info -->
-    <string name="register_way_title">Vous y êtes presque</string>
+    <string name="register_way_title">Vous y êtes presque!</string>
     <string name="register_way_des">Créez un compte pour accéder aux autres profils, à la création d\'itiniraire, à votre programme d\'entaînement et au suivi de vos sessions.</string>
     <string name="register_google">S\'inscrire avec Google</string>
     <string name="register_email">Continuer avec un e-mail</string>
